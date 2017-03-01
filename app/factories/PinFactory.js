@@ -24,85 +24,85 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 
 	};
 
-	// let getPin = (user) => {
-	// 	let items = [];
-	// 	return $q((resolve, reject) => {
-	// 		$http.get(`${FBCreds.databaseURL}/pins.json?orderBy="uid"&equalTo="${pinId}"`)
-	// 		.then((itemObject) => {
-	// 			let itemCollection = itemObject.data;
-	// 			Object.keys(itemCollection).forEach((key) => {
-	// 				itemCollection[key].id = key;
-	// 				items.push(itemCollection[key]);
-	// 				console.log("array", items);
-	// 			});
-	// 			resolve(items);
-	// 		})
-	// 		//success and error are used in previous versions of angular. now then and catch
-	// 		.catch((error) => {
-	// 			reject(error);
-	// 		});
-	// 	}); 
-	// };
+	let getPins = (user) => {
+		let userPins = [];
+		return $q((resolve, reject) => {
+			$http.get(`${FBCreds.databaseURL}/pins.json?orderBy="uid"&equalTo="${user}"`)
+			.then((userPinObject) => {
+				let userPinList = userPinObject.data;
+				Object.keys(userPinList).forEach((key) => {
+					userPinList[key].id = key;
+					userPins.push(userPinList[key]);
+					console.log(userPins);
+				});
+				resolve(userPins);
+			})
+			//success and error are used in previous versions of angular. now then and catch
+			.catch((error) => {
+				reject(error);
+			});
+		}); 
+	};
 
-	// let postPin = (newItem) => {
-	// 	return $q((resolve, reject) => {
-	// 		$http.post(`${FBCreds.databaseURL}/items.json`,
-	// 			JSON.stringify(newItem))
-	// 		.then((ObjectFromFirebase) => {
-	// 			resolve(ObjectFromFirebase);
-	// 		})
-	// 		.catch((error) => {
-	// 			reject(error);
-	// 		});
-	// 	});
+	let postPin = (newPin) => {
+		return $q((resolve, reject) => {
+			$http.post(`${FBCreds.databaseURL}/pins.json`,
+				JSON.stringify(newPin))
+			.then((ObjectFromFirebase) => {
+				resolve(ObjectFromFirebase);
+			})
+			.catch((error) => {
+				reject(error);
+			});
+		});
 
-	// };
+	};
 
-	// let deletePin = (itemId) => {
-	// 	console.log("delete in factory", itemId);
-	// 	return $q((resolve, reject) => {
-	// 		$http.delete(`${FBCreds.databaseURL}/items/${itemId}.json`)
-	// 		.then((ObjectFromFirebase) => {
-	// 			resolve(ObjectFromFirebase);
-	// 		})
-	// 		.catch((error) => {
-	// 			reject(error);
-	// 		});
-	// 	});
-	// };
+	let deletePin = (pinId) => {
+		console.log("delete in factory", pinId);
+		return $q((resolve, reject) => {
+			$http.delete(`${FBCreds.databaseURL}/pins/${pinId}.json`)
+			.then((ObjectFromFirebase) => {
+				resolve(ObjectFromFirebase);
+			})
+			.catch((error) => {
+				reject(error);
+			});
+		});
+	};
 
-	// // let getSingleItem = (itemId) => {
-	// // 	return $q(function(resolve, reject) {
-	// // 		$http.get(`${FBCreds.databaseURL}/items/${itemId}.json`)
-	// // 		.then(function(itemObject){
-	// // 			resolve(itemObject.data);
-	// // 		})
-	// // 		.catch(function(error){ 
-	// // 			reject(error);
-	// // 		});
-	// // 	});
-	// // };
-
-	// let updatePin = (itemId, editedItem) => {
-	// 	//properties with leading $$ characters will be stripped since Angular uses that notaton internally
-	// console.log("angularJSON", angular.toJson(editedItem));
-	// console.log("JSON.stringify", JSON.stringify(editedItem));
+	// let getSingleItem = (itemId) => {
 	// 	return $q(function(resolve, reject) {
-	// 		//pass the item we're adjusting and then the actual item
-	// 		$http.patch(`${FBCreds.databaseURL}/items/${itemId}.json`,
-	// 			angular.toJson(editedItem))
-	// 		.then(function(ObjectFromFirebase) {
-	// 			resolve(ObjectFromFirebase);
+	// 		$http.get(`${FBCreds.databaseURL}/items/${itemId}.json`)
+	// 		.then(function(itemObject){
+	// 			resolve(itemObject.data);
 	// 		})
-	// 		.catch(function(error) {
+	// 		.catch(function(error){ 
 	// 			reject(error);
 	// 		});
-
 	// 	});
 	// };
+
+	let updatePin = (pinId, editedPin) => {
+		//properties with leading $$ characters will be stripped since Angular uses that notaton internally
+	console.log("angularJSON", angular.toJson(editedPin));
+	console.log("JSON.stringify", JSON.stringify(editedPin));
+		return $q(function(resolve, reject) {
+			//pass the item we're adjusting and then the actual item
+			$http.patch(`${FBCreds.databaseURL}/pins/${pinId}.json`,
+				angular.toJson(editedPin))
+			.then(function(ObjectFromFirebase) {
+				resolve(ObjectFromFirebase);
+			})
+			.catch(function(error) {
+				reject(error);
+			});
+
+		});
+	};
 
 	//return so that they can become part of ItemStorage
-	return {getAllPins};
+	return {getAllPins, getPins, postPin, deletePin};
 
 	});
 
