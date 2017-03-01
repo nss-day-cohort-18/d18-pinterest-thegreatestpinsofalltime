@@ -1,61 +1,52 @@
 {
     "users": [
-       
-        {    
-            "": {
-                "uid": "",
-                "name": ""
-            }
-        },    
-        {    
-            "": {
-                "uid": "",
-                "name": ""
-            }
-        }
+        
+                {
+                    "uid": "",
+                    "name": ""
+                },
+                {
+                    "uid": "",
+                    "name": ""
+                }
     ],    
 
 
     "pins": [
-        {    
-            "pinId": {
-                "uid": "",
-                "boardId": "",
-                "url": "",
-                "title": ""
-            }
-        }, 
-        {    
-            "pinId": {
-                "uid": "",
-                "boardId": "",
-                "url": "",
-                "title": ""
-            }
-        },
-        {    
-            "pinId": {
-                "uid": "",
-                "boardId": "",
-                "url": "",
-                "title": ""
-            }
-        }           
+                {   "pinId": "",
+                    "uid": "",
+                    "boardId": "",
+                    "url": "",
+                    "title": ""
+                }
+                {    
+                    "pinId": "",
+                    "uid": "",
+                    "boardId": "",
+                    "url": "",
+                    "title": ""
+                },
+                {    
+                    "pinId": "",
+                    "uid": "",
+                    "boardId": "",
+                    "url": "",
+                    "title": ""
+                }      
 
     ],
     "boards": [
-        {    
-            "boardId": {
-                "uid": "",
-                "title": ""
-            }
-        },
-        {    
-            "boardId": {
-                "uid": "",
-                "title": ""
-            }
-        }           
+                {
+                    "boardId": "",
+                    "uid": "",
+                    "title": ""
+            
+                },
+                {    
+                    "boardId": "",
+                    "uid": "",
+                    "title": ""
+                }           
 
     ]
 
