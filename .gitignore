@@ -28,5 +28,6 @@ Temporary Items
 node_modules
 lib/.sass-cache
 app/values/fb-creds.js
+dist
 
 # End of https://www.gitignore.io/api/osx
