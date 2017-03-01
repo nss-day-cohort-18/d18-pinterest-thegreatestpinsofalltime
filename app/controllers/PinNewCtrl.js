@@ -22,7 +22,6 @@ app.controller('PinNewCtrl', function($scope, $location, AuthFactory, PinFactory
         console.log("add new Pin");
         PinFactory.postNewPin($scope.newPin)
         .then(function(response) {
-
         	$location.url("pins/list");
         });
         console.log("you added a new pin", $scope.newPin);
