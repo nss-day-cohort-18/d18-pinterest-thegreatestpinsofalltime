@@ -1,30 +1,25 @@
-<nav class="navbar navbar-default" ng-controller="NavCtrl">
-    <div class="row">
+<nav class="nav-wrapper" md-block ng-controller="NavCtrl">
+
 
       <div class="col s2 md-block navbar-header">
-        <!-- <md-button type="button" class="md-raised md-primary" data-toggle="collapse" aria-expanded="false"> --><a href="#"><img class="brand-logo left" src="img/pin-logo.png"></img></a><!-- </md-button>  -->
+        <a href="#"><img class="brand-logo left" src="img/pin-logo.png"></img></a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="col s4 md-block navbar-items right">
-        <!-- Use Angular to loop through nav items -->
-        <ul class="nav navbar-nav right">
-          <li ng-show="!isLoggedIn"><a ng-href="#!/login">Login</a></li>
-          <li ng-show="isLoggedIn"><a ng-href="#!/pins/new">New Pin</a></li>
-          <li ng-show="isLoggedIn"><a ng-href="#!/pins/list">All Pins</a></li>
-          <li ng-show="isLoggedIn"><a ng-href="#!/logout">Logout</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
 
-      <div class="col s6" md-block><!--  ng-show="isLoggedIn"> -->
+      <div class="center">
+        <ul class="center">
+          <md-button class="md-primary" ng-show="!isLoggedIn"><a ng-href="#!/login">Login</a></md-button>
+          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/pins/new">New Pin</a></md-button>
+          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/pins/list">All Pins</a></md-button>
+          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/logout">Logout</a></md-button>
+        </ul>
+      </div>
+
+      <div class="col s6"><!--  ng-show="isLoggedIn"> -->
           <md-input-container class="md-block" flex-gt-sm>
             <i class="material-icons"></i>
             <input type="text" class="fa fa-search form-control" placeholder="Search Pinterest..." ng-model="searchText.search">
           </md-input-container>
       </div>
 
-
-
-      
-    </div><!-- /.container-fluid -->
 </nav>
