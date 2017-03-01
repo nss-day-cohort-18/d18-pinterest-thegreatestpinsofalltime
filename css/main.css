@@ -44,6 +44,14 @@ body {
   border-radius: 5px;
   margin: 30px auto auto 30%; }
 
+.md-primary a {
+  text-decoration: none !important; }
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  text-decoration: none !important;
+  cursor: auto; }
+
 .brand-logo {
   width: 40px;
   height: 40px; }
