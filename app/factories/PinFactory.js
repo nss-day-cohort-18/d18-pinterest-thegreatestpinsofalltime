@@ -2,8 +2,9 @@
 console.log("hello from pinfactory");
 
 app.factory("PinFactory", ($q, $http, FBCreds) => {
-console.log("hello from pinfactory under app.factory");
+
 	let getAllPins = (user) => {
+console.log("hello from pinfactory under app.factory");
 		let allPins = [];
 		return $q((resolve, reject) => {
 			$http.get(`${FBCreds.databaseURL}/pins.json`)
@@ -113,6 +114,7 @@ console.log("newObj", allPins);
 	// };
 
 	//return so that they can become part of ItemStorage
-	// return {getAllPins, getPin, postPin, deletePin, getSingleItem, updatePin};
+	// , getPin, postPin, deletePin, getSingleItem, updatePin
+	return {getAllPins};
 getAllPins();
 });

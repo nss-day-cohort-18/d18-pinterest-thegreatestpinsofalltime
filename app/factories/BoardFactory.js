@@ -4,20 +4,20 @@
 app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
 	
 
-	let getItemList = () => {
-		let items = [];
+	let getBoardList = () => {
+		let boardObj = [];
 		let user = AuthFactory.getUser();
 
 		return $q((resolve, reject) => {
 			// console.log("list url", `${FBCreds.databaseURL}/items.json?orderBy="uid"&equalTo="${user}"`);
-			$http.get(`${FBCreds.databaseURL}/items.json?orderBy="uid"&equalTo="${user}"`)
+			$http.get(`${FBCreds.databaseURL}/boards.json?orderBy="uid"&equalTo="${user}"`)
 			.then((itemObject) => {
 				let itemCollection = itemObject.data;
 				Object.keys(itemCollection).forEach((key) => {
 					itemCollection[key].id = key;
-					items.push(itemCollection[key]);
+					boardObj.push(itemCollection[key]);
 				});
-				resolve(items);
+				resolve(boardObj);
 			})
 			.catch((error) => {
 				reject(error);
@@ -25,9 +25,9 @@ app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
 		});
 	};
 
-	let postNewItem = (newItem) => {
+	let postNewBoard = (newItem) => {
 		return $q((resolve, reject) => {
-			$http.post(`${FBCreds.databaseURL}/items.json`,
+			$http.post(`${FBCreds.databaseURL}/boards.json`,
 				JSON.stringify(newItem))
 			.then((ObjectFromFirebase) => {
 				resolve(ObjectFromFirebase);
@@ -39,7 +39,7 @@ app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
 
 	};
 
-	let deleteItem = (itemId) => {
+	let deleteBoard = (itemId) => {
 		console.log("delete in factory", itemId);
 		return $q((resolve, reject) => {
 			$http.delete(`${FBCreds.databaseURL}/items/${itemId}.json`)
@@ -50,7 +50,7 @@ app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
 
 	};
 
-	let getSingleItem = (itemId) => {
+	let getSingleBoard = (itemId) => {
 		return $q(function(resolve, reject){
 			$http.get(`${FBCreds.databaseURL}/items/${itemId}.json`)
 			.then(function (itemObject) {
@@ -62,7 +62,7 @@ app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
 		});
 	};
 
-	let updateItem = (itemId, editedItem) => {
+	let updateBoard = (itemId, editedItem) => {
 		return $q(function(resolve, reject){
 			$http.patch(`${FBCreds.databaseURL}/items/${itemId}.json`, 
 				angular.toJson(editedItem))
@@ -80,5 +80,5 @@ app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
 
 
 
-	return {getItemList, postNewItem, deleteItem, getSingleItem, updateItem};
+	return {getBoardList, postNewBoard, deleteBoard, getSingleBoard, updateBoard};
 });
