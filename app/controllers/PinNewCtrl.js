@@ -1,31 +1,29 @@
-"use strict";
+'use strict';
 
-console.log("PinNewCtrl");
-app.controller('PinNewCtrl', function($scope, $location, AuthFactory, PinFactory){
+app.controller("PinNewCtrl", function($scope, PinFactory, BoardFactory, $location, AuthFactory) {
 
-	let user = AuthFactory.getUser();
+  let user = AuthFactory.getUser();
+  // let board = ??????
 
-	$scope.title = "New Pin";
-	$scope.btnText = "Submit";
-	
-	$scope.newPin = {
-		boardid: "",
-		contenturl: "",
-		imageurl: "",
-		title: "",
-		uid: user
-	};
+  $scope.title = "Add A New Pin";
+  $scope.btnText = "Add New Pin";
+  $scope.newPin = {
+    contentURL: "",
+    photoURL: "",
+    pinName: "",
+    description: "",
+    //boardId: board,
+    uid: user
+  };
 
-	//PinFactory is linking to the factory that will hold Firebase interaction functions.  The relevant factory is called PinFactory 
 
-	 $scope.addNewPin = function () {
-        console.log("add new Pin");
-        PinFactory.postNewPin($scope.newPin)
-        .then(function(response) {
-        	$location.url("pins/list");
-        });
-        console.log("you added a new pin", $scope.newPin);
-        $scope.newPin = {};
-    };
-
+  $scope.addNewPin = function() {
+    console.log("add new pin");
+    PinFactory.postNewPin($scope.newPin)
+    .then(function(response) {
+      $location.url("/pins/list");
+    });
+    console.log("you added a new Pin:", $scope.newPin);
+    $scope.newPin = {};
+  };
 });
