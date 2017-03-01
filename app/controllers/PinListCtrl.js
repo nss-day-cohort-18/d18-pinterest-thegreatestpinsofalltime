@@ -20,4 +20,6 @@ app.controller("PinListCtrl", function($scope, PinFactory, AuthFactory, SearchTe
       });
    };
 
+
 });
+

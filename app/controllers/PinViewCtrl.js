@@ -15,4 +15,3 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 		})[0];
 	});
 
-});
