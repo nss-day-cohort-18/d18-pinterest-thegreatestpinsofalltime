@@ -1,3 +1,59 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+body {
+  margin: 30px; }
 
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px; }
+
+.search input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset; }
+
+.search input {
+  text-indent: 32px; }
+
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.login-btn {
+  margin: 5px;
+  color: white;
+  background-color: #5bc0de;
+  border-color: #46b8da; }
+
+.login-btn:hover {
+  background-color: lightgrey;
+  border-color: lightgrey;
+  color: black; }
+
+#login-pg {
+  display: block;
+  text-align: center;
+  width: 40%;
+  text-align: center;
+  display: block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 30px auto auto 30%; }
+
+.md-primary a {
+  text-decoration: none !important; }
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  text-decoration: none !important;
+  cursor: auto; }
+
+.brand-logo {
+  width: 40px;
+  height: 40px; }
 
 /*# sourceMappingURL=main.css.map */
