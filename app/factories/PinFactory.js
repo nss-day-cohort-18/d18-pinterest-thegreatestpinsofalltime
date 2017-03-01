@@ -2,35 +2,24 @@
 console.log("hello from pinfactory");
 
 app.factory("PinFactory", ($q, $http, FBCreds) => {
-console.log("hello from pinfactory under app.factory");
-	let getAllPins = (user) => {
+
+	let getAllPins = () => {
 		let allPins = [];
 		return $q((resolve, reject) => {
 			$http.get(`${FBCreds.databaseURL}/pins.json`)
-
-			.then((itemObject) => {
-				let allPinsObject = itemObject.data;
-				console.log("we have data", allPinsObject);
-				for (var i = 0; i < allPinsObject.length; i++) {
-					let newObj = {};
-					newObj.pinId = Object.keys(allPinsObject[i])[0];
-					newObj.uid = allPinsObject[i][newObj.pinID].uid;
-					newObj.boardId = allPinsObject[i][newObj.pinID].boardId;
-					newObj.url = allPinsObject[i][newObj.pinID].url;
-					newObj.title = allPinsObject[i][newObj.pinID].title;
-					newObj.image = allPinsObject[i][newObj.pinID].image;
-					allPins.push(newObj);
-				}
+			.then((pinObject) => {
+				let pinList = pinObject.data;
+				console.log(pinList);
+				Object.keys(pinList).forEach((key) => {
+					pinList[key].id = key;
+					allPins.push(pinList[key]);
+				});
 				resolve(allPins);
-				
 			})
 			.catch((error) => {
 				reject(error);
 			});
-console.log("newObj", allPins);
-
-
-
+			console.log("newObj", allPins);
 		});
 
 	};
@@ -113,6 +102,7 @@ console.log("newObj", allPins);
 	// };
 
 	//return so that they can become part of ItemStorage
-	// return {getAllPins, getPin, postPin, deletePin, getSingleItem, updatePin};
-getAllPins();
-});
+	return {getAllPins};
+
+	});
+
