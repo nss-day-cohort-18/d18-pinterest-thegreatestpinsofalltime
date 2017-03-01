@@ -102,7 +102,9 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 	// };
 
 	//return so that they can become part of ItemStorage
+
 	return {getAllPins};
 
 	});
+
 
