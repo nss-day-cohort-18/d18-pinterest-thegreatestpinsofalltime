@@ -1,28 +1,29 @@
 <nav class="navbar navbar-default" ng-controller="NavCtrl">
-    <div class="container-fluid">
+    <div class="nav-wrapper">
+
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Todo App</a>
+        <a class="brand-logo left" href="#">Pinterest</a>
       </div>
-      <div class="col s6 col-xs-offset-3" ng-show="isLoggedIn">
+
+      <div class="col s6"><!--  ng-show="isLoggedIn"> -->
           <div class="input-group">
-            <span class="glyphicon glyphicon-king"></span>
+            <i class="material-icons">search</i>
+            <span class=""></span>
             <!-- TODO: Bind the input to our todo list -->
             <input type="text" class="form-control" placeholder="Search for..." ng-model="searchText.search">
           </div>
       </div>
+
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <!-- TODO: Use Angular to loop through nav items -->
-        <ul class="nav navbar-nav navbar-right">
+      <div class="collapse navbar-collapse">
+        <!-- Use Angular to loop through nav items -->
+        <ul class="nav navbar-nav right">
           <li ng-show="!isLoggedIn"><a ng-href="#!/login">Login</a></li>
-          <li ng-show="isLoggedIn"><a ng-href="#!/items/new">New Items</a></li>
-          <li ng-show="isLoggedIn"><a ng-href="#!/items/list">All Items</a></li>
+          <li ng-show="isLoggedIn"><a ng-href="#!/pins/new">New Pin</a></li>
+          <li ng-show="isLoggedIn"><a ng-href="#!/pins/list">All Pins</a></li>
           <li ng-show="isLoggedIn"><a ng-href="#!/logout">Logout</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
