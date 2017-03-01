@@ -18,11 +18,11 @@ app.controller('PinNewCtrl', function($scope, $location, AuthFactory, PinFactory
 
 	//PinFactory is linking to the factory that will hold Firebase interaction functions.  The relevant factory is called PinFactory 
 
-	 $scope.addNewItem = function () {
-        console.log("add new Item");
-        PinFactory.postNewItem($scope.newPin)
+	 $scope.addNewPin = function () {
+        console.log("add new Pin");
+        PinFactory.postNewPin($scope.newPin)
         .then(function(response) {
-        	$location.url("items/list");
+        	$location.url("items/list");//change this url to change 
         });
         // $scope.newPin.id = $scope.items.length;
         console.log("you added a new item", $scope.newPin);
