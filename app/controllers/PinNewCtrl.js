@@ -22,11 +22,10 @@ app.controller('PinNewCtrl', function($scope, $location, AuthFactory, PinFactory
         console.log("add new Pin");
         PinFactory.postNewPin($scope.newPin)
         .then(function(response) {
-        	$location.url("items/list");//change this url to change 
+
+        	$location.url("pins/list");
         });
-        // $scope.newPin.id = $scope.items.length;
-        console.log("you added a new item", $scope.newPin);
-        // $scope.items.push($scope.newPin);
+        console.log("you added a new pin", $scope.newPin);
         $scope.newPin = {};
     };
 

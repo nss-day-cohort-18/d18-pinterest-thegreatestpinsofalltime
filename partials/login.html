@@ -2,16 +2,16 @@
   <div id="login-pg" class="col-xs-12 text-right">
     <section class="auth-form">
     <h4>Login/Register</h4>
-    <div>
+    <md-input-container>
       <input placeholder="Enter Email" type="text" autofocus="true"  ng-model="account.email">
-    </div>
-    <div>
+    </md-input-container>
+    <md-input-container>
       <input placeholder="Enter Password" type="password" ng-model="account.password">
-    </div>
+    </md-input-container>
     <div>
-      <button class="btn btn-info login-btn" ng-click="login()">Login</button>
-      <button class="btn btn-default login-btn" ng-click="register()">Register</button><br>
-      <button class="btn btn-info login-btn" ng-click="loginGoogle()">Login with Google</button>
+      <md-button class="md-raised md-primary login-btn" ng-click="login()">Login</md-button>
+      <md-button class="md-raised md-primary btn-default login-btn" ng-click="register()">Register</md-button><br>
+      <md-button class="md-raised md-primary login-btn" ng-click="loginGoogle()">Login with Google</md-button>
     </div>
     </section>
   </div>
