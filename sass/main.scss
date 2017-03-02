@@ -77,6 +77,13 @@ a:-webkit-any-link {
   height: 40px;
 }
 
+.pin-card {
+  display: inline-block;
+  margin-left: 5px;
+  border: 1px solid black;
+  background-color: #c0c1c4;
+  box-shadow: 2px 2px 2px;
+}
 /*card detail*/
 .md-card {
     max-width: 30%;

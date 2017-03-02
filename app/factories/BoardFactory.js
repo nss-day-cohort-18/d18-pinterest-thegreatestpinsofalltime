@@ -1,9 +1,9 @@
 "use strict";
 
 
-app.factory("ItemStorage", ($q, $http, FBCreds, AuthFactory) => {
+app.factory("BoardFactory", ($q, $http, FBCreds, AuthFactory) => {
+console.log("BoardFactory");
 	
-
 	let getBoardList = () => {
 		let boardObj = [];
 		let user = AuthFactory.getUser();

@@ -1,7 +1,8 @@
 <h1>All Pins</h1>
 
-<div ng-repeat="pin in pins | filter:{name, title:searchText.search}">
-		<img src="{{pin.img}}" class="pin-img"></img>
+<div class="pin-card" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
+		<img src="{{pin.img}}" class="pin-img">{{pin.img}}</img>
+
       <p>{{pin.title}}</p>
       <p>Added by: {{pin.name}}</p>
  	 	<md-card-actions layout="row" layout-align="start center">
@@ -12,3 +13,4 @@
       	</md-card-icon-actions>
       </md-card-actions>
 </div> 
+
