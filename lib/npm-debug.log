@@ -1,0 +1,551 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json lib@1.0.0 No description
+5 warn package.json lib@1.0.0 No repository field.
+6 warn package.json lib@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib',
+8 verbose install   [ 'angular',
+8 verbose install     'angular-animate',
+8 verbose install     'angular-aria',
+8 verbose install     'angular-material',
+8 verbose install     'angular-route',
+8 verbose install     'angularfire',
+8 verbose install     'bootstrap',
+8 verbose install     'copy',
+8 verbose install     'firebase',
+8 verbose install     'grunt',
+8 verbose install     'grunt-contrib-copy',
+8 verbose install     'grunt-contrib-jshint',
+8 verbose install     'grunt-contrib-sass',
+8 verbose install     'grunt-contrib-watch',
+8 verbose install     'jquery',
+8 verbose install     'jshint',
+8 verbose install     'jshint-stylish',
+8 verbose install     'matchdep',
+8 verbose install     'sass' ] ]
+9 info preinstall lib@1.0.0
+10 warn package.json sass@0.5.0 No repository field.
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping angular-route@^1.6.2 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+13 verbose already installed skipping angularfire@^2.3.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+14 verbose already installed skipping bootstrap@^3.3.7 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+15 verbose already installed skipping copy@^0.3.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+16 verbose already installed skipping firebase@^3.6.10 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+17 verbose already installed skipping grunt@^1.0.1 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+18 verbose already installed skipping grunt-contrib-copy@^1.0.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+19 verbose already installed skipping grunt-contrib-jshint@^1.1.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+20 verbose already installed skipping grunt-contrib-sass@^1.0.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+21 verbose already installed skipping grunt-contrib-watch@^1.0.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+22 verbose already installed skipping jquery@^3.1.1 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+23 verbose already installed skipping jshint@^2.9.4 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+24 verbose already installed skipping jshint-stylish@^2.2.1 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+25 verbose already installed skipping matchdep@^1.0.1 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+26 verbose already installed skipping sass@^0.5.0 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+27 verbose already installed skipping angular@^1.6.2 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+28 verbose cache add [ 'angular-animate@^1.6.2', null ]
+29 verbose cache add name=undefined spec="angular-animate@^1.6.2" args=["angular-animate@^1.6.2",null]
+30 verbose parsed url { protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: 'angular-animate@^1.6.2',
+30 verbose parsed url   path: 'angular-animate@^1.6.2',
+30 verbose parsed url   href: 'angular-animate@^1.6.2' }
+31 verbose cache add [ 'angular-aria@^1.6.2', null ]
+32 verbose cache add name=undefined spec="angular-aria@^1.6.2" args=["angular-aria@^1.6.2",null]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: 'angular-aria@^1.6.2',
+33 verbose parsed url   path: 'angular-aria@^1.6.2',
+33 verbose parsed url   href: 'angular-aria@^1.6.2' }
+34 verbose already installed skipping angular-material@^1.1.3 /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+35 verbose cache add name="angular-animate" spec="^1.6.2" args=["angular-animate","^1.6.2"]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: '^1.6.2',
+36 verbose parsed url   path: '^1.6.2',
+36 verbose parsed url   href: '^1.6.2' }
+37 verbose addNamed [ 'angular-animate', '^1.6.2' ]
+38 verbose addNamed [ null, '>=1.6.2-0 <2.0.0-0' ]
+39 verbose cache add name="angular-aria" spec="^1.6.2" args=["angular-aria","^1.6.2"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '^1.6.2',
+40 verbose parsed url   path: '^1.6.2',
+40 verbose parsed url   href: '^1.6.2' }
+41 verbose addNamed [ 'angular-aria', '^1.6.2' ]
+42 verbose addNamed [ null, '>=1.6.2-0 <2.0.0-0' ]
+43 silly lockFile 6de39df0-angular-animate-1-6-2 angular-animate@^1.6.2
+44 verbose lock angular-animate@^1.6.2 /Users/wgaggioli/.npm/6de39df0-angular-animate-1-6-2.lock
+45 silly lockFile 9305a949-angular-aria-1-6-2 angular-aria@^1.6.2
+46 verbose lock angular-aria@^1.6.2 /Users/wgaggioli/.npm/9305a949-angular-aria-1-6-2.lock
+47 silly addNameRange { name: 'angular-animate',
+47 silly addNameRange   range: '>=1.6.2-0 <2.0.0-0',
+47 silly addNameRange   hasData: false }
+48 silly addNameRange { name: 'angular-aria',
+48 silly addNameRange   range: '>=1.6.2-0 <2.0.0-0',
+48 silly addNameRange   hasData: false }
+49 verbose request where is /angular-animate
+50 verbose request registry https://registry.npmjs.org/
+51 verbose request id d915514c2e054883
+52 verbose url raw /angular-animate
+53 verbose url resolving [ 'https://registry.npmjs.org/', './angular-animate' ]
+54 verbose url resolved https://registry.npmjs.org/angular-animate
+55 verbose request where is https://registry.npmjs.org/angular-animate
+56 info trying registry request attempt 1 at 11:10:56
+57 verbose etag W/"58b6c386-1a26d"
+58 http GET https://registry.npmjs.org/angular-animate
+59 verbose request where is /angular-aria
+60 verbose request registry https://registry.npmjs.org/
+61 verbose url raw /angular-aria
+62 verbose url resolving [ 'https://registry.npmjs.org/', './angular-aria' ]
+63 verbose url resolved https://registry.npmjs.org/angular-aria
+64 verbose request where is https://registry.npmjs.org/angular-aria
+65 info trying registry request attempt 1 at 11:10:56
+66 verbose etag W/"5899d2d2-14b51"
+67 http GET https://registry.npmjs.org/angular-aria
+68 http 304 https://registry.npmjs.org/angular-animate
+69 silly registry.get cb [ 304,
+69 silly registry.get   { date: 'Wed, 01 Mar 2017 17:07:47 GMT',
+69 silly registry.get     via: '1.1 varnish',
+69 silly registry.get     'cache-control': 'max-age=300',
+69 silly registry.get     etag: 'W/"58b6c386-1a26d"',
+69 silly registry.get     age: '117',
+69 silly registry.get     connection: 'keep-alive',
+69 silly registry.get     'x-served-by': 'cache-ord1734-ORD',
+69 silly registry.get     'x-cache': 'HIT',
+69 silly registry.get     'x-cache-hits': '1',
+69 silly registry.get     'x-timer': 'S1488388067.260590,VS0,VE0',
+69 silly registry.get     vary: 'Accept-Encoding' } ]
+70 verbose etag https://registry.npmjs.org/angular-animate from cache
+71 silly addNameRange number 2 { name: 'angular-animate',
+71 silly addNameRange   range: '>=1.6.2-0 <2.0.0-0',
+71 silly addNameRange   hasData: true }
+72 silly addNameRange versions [ 'angular-animate',
+72 silly addNameRange   [ '0.0.1',
+72 silly addNameRange     '0.0.2',
+72 silly addNameRange     '1.2.19-build.256',
+72 silly addNameRange     '1.2.16',
+72 silly addNameRange     '1.2.23',
+72 silly addNameRange     '1.3.0-rc.5',
+72 silly addNameRange     '1.3.0',
+72 silly addNameRange     '1.3.1',
+72 silly addNameRange     '1.3.2',
+72 silly addNameRange     '1.3.3',
+72 silly addNameRange     '1.3.4-build.3588',
+72 silly addNameRange     '1.2.27',
+72 silly addNameRange     '1.3.4',
+72 silly addNameRange     '1.3.5',
+72 silly addNameRange     '1.3.6',
+72 silly addNameRange     '1.3.7',
+72 silly addNameRange     '1.2.28',
+72 silly addNameRange     '1.3.8',
+72 silly addNameRange     '1.4.0-beta.0',
+72 silly addNameRange     '1.3.9',
+72 silly addNameRange     '1.3.10',
+72 silly addNameRange     '1.4.0-beta.1',
+72 silly addNameRange     '1.4.0-beta.2',
+72 silly addNameRange     '1.3.11',
+72 silly addNameRange     '1.4.0-beta.3',
+72 silly addNameRange     '1.3.12',
+72 silly addNameRange     '1.3.13',
+72 silly addNameRange     '1.4.0-beta.4',
+72 silly addNameRange     '1.3.14',
+72 silly addNameRange     '1.4.0-beta.5',
+72 silly addNameRange     '1.4.0-beta.6',
+72 silly addNameRange     '1.3.15',
+72 silly addNameRange     '1.4.0-rc.0',
+72 silly addNameRange     '1.4.0-rc.1',
+72 silly addNameRange     '1.4.0-rc.2',
+72 silly addNameRange     '1.4.0',
+72 silly addNameRange     '1.3.16',
+72 silly addNameRange     '1.4.1',
+72 silly addNameRange     '1.4.2',
+72 silly addNameRange     '1.3.17',
+72 silly addNameRange     '1.4.3',
+72 silly addNameRange     '1.4.4',
+72 silly addNameRange     '1.3.18',
+72 silly addNameRange     '1.4.5',
+72 silly addNameRange     '1.3.19',
+72 silly addNameRange     '1.4.6',
+72 silly addNameRange     '1.5.0-beta.0',
+72 silly addNameRange     '1.2.29',
+72 silly addNameRange     '1.3.20',
+72 silly addNameRange     '1.4.7',
+72 silly addNameRange     '1.5.0-beta.2',
+72 silly addNameRange     '1.4.8',
+72 silly addNameRange     '1.5.0-rc.0',
+72 silly addNameRange     '1.5.0-rc.1',
+72 silly addNameRange     '1.4.9',
+72 silly addNameRange     '1.5.0-rc.2',
+72 silly addNameRange     '1.5.0',
+72 silly addNameRange     '1.5.1',
+72 silly addNameRange     '1.4.10',
+72 silly addNameRange     '1.5.2',
+72 silly addNameRange     '1.5.3',
+72 silly addNameRange     '1.5.5',
+72 silly addNameRange     '1.4.11',
+72 silly addNameRange     '1.5.6',
+72 silly addNameRange     '1.4.12',
+72 silly addNameRange     '1.5.7',
+72 silly addNameRange     '1.2.30',
+72 silly addNameRange     '1.5.8',
+72 silly addNameRange     '1.4.13',
+72 silly addNameRange     '1.2.31',
+72 silly addNameRange     '1.2.32',
+72 silly addNameRange     '1.4.14',
+72 silly addNameRange     '1.6.0-rc.0',
+72 silly addNameRange     '1.6.0-rc.1',
+72 silly addNameRange     '1.5.9',
+72 silly addNameRange     '1.6.0-rc.2',
+72 silly addNameRange     '1.6.0',
+72 silly addNameRange     '1.5.10',
+72 silly addNameRange     '1.6.1',
+72 silly addNameRange     '1.5.11',
+72 silly addNameRange     '1.6.2' ] ]
+73 verbose addNamed [ 'angular-animate', '1.6.2' ]
+74 verbose addNamed [ '1.6.2', '1.6.2' ]
+75 silly lockFile 443abf2f-angular-animate-1-6-2 angular-animate@1.6.2
+76 verbose lock angular-animate@1.6.2 /Users/wgaggioli/.npm/443abf2f-angular-animate-1-6-2.lock
+77 silly lockFile 3c258339-nimate-angular-animate-1-6-2-tgz https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz
+78 verbose lock https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz /Users/wgaggioli/.npm/3c258339-nimate-angular-animate-1-6-2-tgz.lock
+79 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz',
+79 verbose addRemoteTarball   'def2a8b9ede53b4b6e234c25f5c64e4b4385df15' ]
+80 info retry fetch attempt 1 at 11:10:57
+81 verbose fetch to= /var/folders/k8/p8ss_60j5g51xdj5h01wr34r0000gn/T/npm-56114-tc3X645y/registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz
+82 http GET https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz
+83 http 304 https://registry.npmjs.org/angular-aria
+84 silly registry.get cb [ 304,
+84 silly registry.get   { date: 'Wed, 01 Mar 2017 17:07:47 GMT',
+84 silly registry.get     via: '1.1 varnish',
+84 silly registry.get     'cache-control': 'max-age=300',
+84 silly registry.get     etag: 'W/"5899d2d2-14b51"',
+84 silly registry.get     age: '0',
+84 silly registry.get     connection: 'keep-alive',
+84 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+84 silly registry.get     'x-cache': 'HIT',
+84 silly registry.get     'x-cache-hits': '1',
+84 silly registry.get     'x-timer': 'S1488388067.261885,VS0,VE24',
+84 silly registry.get     vary: 'Accept-Encoding' } ]
+85 verbose etag https://registry.npmjs.org/angular-aria from cache
+86 silly addNameRange number 2 { name: 'angular-aria',
+86 silly addNameRange   range: '>=1.6.2-0 <2.0.0-0',
+86 silly addNameRange   hasData: true }
+87 silly addNameRange versions [ 'angular-aria',
+87 silly addNameRange   [ '1.3.0-rc.5',
+87 silly addNameRange     '1.3.0',
+87 silly addNameRange     '1.3.1',
+87 silly addNameRange     '1.3.2',
+87 silly addNameRange     '1.3.3',
+87 silly addNameRange     '1.3.4',
+87 silly addNameRange     '1.3.5',
+87 silly addNameRange     '1.3.6',
+87 silly addNameRange     '1.3.7',
+87 silly addNameRange     '1.3.8',
+87 silly addNameRange     '1.4.0-beta.0',
+87 silly addNameRange     '1.3.9',
+87 silly addNameRange     '1.3.10',
+87 silly addNameRange     '1.4.0-beta.1',
+87 silly addNameRange     '1.4.0-beta.2',
+87 silly addNameRange     '1.3.11',
+87 silly addNameRange     '1.4.0-beta.3',
+87 silly addNameRange     '1.3.12',
+87 silly addNameRange     '1.3.13',
+87 silly addNameRange     '1.4.0-beta.4',
+87 silly addNameRange     '1.3.14',
+87 silly addNameRange     '1.4.0-beta.5',
+87 silly addNameRange     '1.4.0-beta.6',
+87 silly addNameRange     '1.3.15',
+87 silly addNameRange     '1.4.0-rc.0',
+87 silly addNameRange     '1.4.0-rc.1',
+87 silly addNameRange     '1.4.0-rc.2',
+87 silly addNameRange     '1.4.0',
+87 silly addNameRange     '1.3.16',
+87 silly addNameRange     '1.4.1',
+87 silly addNameRange     '1.4.2',
+87 silly addNameRange     '1.3.17',
+87 silly addNameRange     '1.4.3',
+87 silly addNameRange     '1.4.4',
+87 silly addNameRange     '1.3.18',
+87 silly addNameRange     '1.4.5',
+87 silly addNameRange     '1.3.19',
+87 silly addNameRange     '1.4.6',
+87 silly addNameRange     '1.5.0-beta.0',
+87 silly addNameRange     '1.3.20',
+87 silly addNameRange     '1.4.7',
+87 silly addNameRange     '1.5.0-beta.2',
+87 silly addNameRange     '1.4.8',
+87 silly addNameRange     '1.5.0-rc.0',
+87 silly addNameRange     '1.5.0-rc.1',
+87 silly addNameRange     '1.4.9',
+87 silly addNameRange     '1.5.0-rc.2',
+87 silly addNameRange     '1.5.0',
+87 silly addNameRange     '1.5.1',
+87 silly addNameRange     '1.4.10',
+87 silly addNameRange     '1.5.2',
+87 silly addNameRange     '1.5.3',
+87 silly addNameRange     '1.5.5',
+87 silly addNameRange     '1.4.11',
+87 silly addNameRange     '1.5.6',
+87 silly addNameRange     '1.4.12',
+87 silly addNameRange     '1.5.7',
+87 silly addNameRange     '1.5.8',
+87 silly addNameRange     '1.4.13',
+87 silly addNameRange     '1.4.14',
+87 silly addNameRange     '1.6.0-rc.0',
+87 silly addNameRange     '1.6.0-rc.1',
+87 silly addNameRange     '1.5.9',
+87 silly addNameRange     '1.6.0-rc.2',
+87 silly addNameRange     '1.6.0',
+87 silly addNameRange     '1.5.10',
+87 silly addNameRange     '1.6.1',
+87 silly addNameRange     '1.5.11',
+87 silly addNameRange     '1.6.2' ] ]
+88 verbose addNamed [ 'angular-aria', '1.6.2' ]
+89 verbose addNamed [ '1.6.2', '1.6.2' ]
+90 silly lockFile 23f8d52c-angular-aria-1-6-2 angular-aria@1.6.2
+91 verbose lock angular-aria@1.6.2 /Users/wgaggioli/.npm/23f8d52c-angular-aria-1-6-2.lock
+92 silly lockFile dec7252d-ular-aria-angular-aria-1-6-2-tgz https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz
+93 verbose lock https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz /Users/wgaggioli/.npm/dec7252d-ular-aria-angular-aria-1-6-2-tgz.lock
+94 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz',
+94 verbose addRemoteTarball   'c5047cae595ec61d24490b6b34b4452e1ecdae1f' ]
+95 info retry fetch attempt 1 at 11:10:57
+96 verbose fetch to= /var/folders/k8/p8ss_60j5g51xdj5h01wr34r0000gn/T/npm-56114-tc3X645y/registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz
+97 http GET https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz
+98 http 200 https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz
+99 http 200 https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz
+100 silly lockFile dec7252d-ular-aria-angular-aria-1-6-2-tgz https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz
+101 silly lockFile dec7252d-ular-aria-angular-aria-1-6-2-tgz https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz
+102 silly lockFile 23f8d52c-angular-aria-1-6-2 angular-aria@1.6.2
+103 silly lockFile 23f8d52c-angular-aria-1-6-2 angular-aria@1.6.2
+104 silly lockFile 9305a949-angular-aria-1-6-2 angular-aria@^1.6.2
+105 silly lockFile 9305a949-angular-aria-1-6-2 angular-aria@^1.6.2
+106 silly lockFile 3c258339-nimate-angular-animate-1-6-2-tgz https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz
+107 silly lockFile 3c258339-nimate-angular-animate-1-6-2-tgz https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz
+108 silly lockFile 443abf2f-angular-animate-1-6-2 angular-animate@1.6.2
+109 silly lockFile 443abf2f-angular-animate-1-6-2 angular-animate@1.6.2
+110 silly lockFile 6de39df0-angular-animate-1-6-2 angular-animate@^1.6.2
+111 silly lockFile 6de39df0-angular-animate-1-6-2 angular-animate@^1.6.2
+112 silly resolved [ { name: 'angular-aria',
+112 silly resolved     version: '1.6.2',
+112 silly resolved     description: 'AngularJS module for making accessibility easy',
+112 silly resolved     main: 'index.js',
+112 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+112 silly resolved     repository:
+112 silly resolved      { type: 'git',
+112 silly resolved        url: 'git+https://github.com/angular/angular.js.git' },
+112 silly resolved     keywords:
+112 silly resolved      [ 'angular',
+112 silly resolved        'framework',
+112 silly resolved        'browser',
+112 silly resolved        'accessibility',
+112 silly resolved        'a11y',
+112 silly resolved        'client-side' ],
+112 silly resolved     author:
+112 silly resolved      { name: 'Angular Core Team',
+112 silly resolved        email: 'angular-core+npm@google.com' },
+112 silly resolved     license: 'MIT',
+112 silly resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+112 silly resolved     homepage: 'http://angularjs.org',
+112 silly resolved     jspm: { shim: [Object] },
+112 silly resolved     gitHead: '1d1a782325e46b890d763688fdcb6d0be8ef5b34',
+112 silly resolved     _id: 'angular-aria@1.6.2',
+112 silly resolved     _shasum: 'c5047cae595ec61d24490b6b34b4452e1ecdae1f',
+112 silly resolved     _from: 'angular-aria@^1.6.2',
+112 silly resolved     _npmVersion: '3.10.10',
+112 silly resolved     _nodeVersion: '6.9.5',
+112 silly resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+112 silly resolved     dist:
+112 silly resolved      { shasum: 'c5047cae595ec61d24490b6b34b4452e1ecdae1f',
+112 silly resolved        tarball: 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz' },
+112 silly resolved     maintainers: [ [Object], [Object] ],
+112 silly resolved     _npmOperationalInternal:
+112 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+112 silly resolved        tmp: 'tmp/angular-aria-1.6.2.tgz_1486475984687_0.36144018080085516' },
+112 silly resolved     directories: {},
+112 silly resolved     _resolved: 'https://registry.npmjs.org/angular-aria/-/angular-aria-1.6.2.tgz' },
+112 silly resolved   { name: 'angular-animate',
+112 silly resolved     version: '1.6.2',
+112 silly resolved     description: 'AngularJS module for animations',
+112 silly resolved     main: 'index.js',
+112 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+112 silly resolved     repository:
+112 silly resolved      { type: 'git',
+112 silly resolved        url: 'git+https://github.com/angular/angular.js.git' },
+112 silly resolved     keywords: [ 'angular', 'framework', 'browser', 'animation', 'client-side' ],
+112 silly resolved     author:
+112 silly resolved      { name: 'Angular Core Team',
+112 silly resolved        email: 'angular-core+npm@google.com' },
+112 silly resolved     license: 'MIT',
+112 silly resolved     bugs: { url: 'https://github.com/angular/angular.js/issues' },
+112 silly resolved     homepage: 'http://angularjs.org',
+112 silly resolved     jspm: { shim: [Object] },
+112 silly resolved     gitHead: 'bd4e1fb3b6ac4f20adca0ba6d4fbf91359836a97',
+112 silly resolved     _id: 'angular-animate@1.6.2',
+112 silly resolved     _shasum: 'def2a8b9ede53b4b6e234c25f5c64e4b4385df15',
+112 silly resolved     _from: 'angular-animate@^1.6.2',
+112 silly resolved     _npmVersion: '3.10.10',
+112 silly resolved     _nodeVersion: '6.9.5',
+112 silly resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
+112 silly resolved     dist:
+112 silly resolved      { shasum: 'def2a8b9ede53b4b6e234c25f5c64e4b4385df15',
+112 silly resolved        tarball: 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz' },
+112 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+112 silly resolved     _npmOperationalInternal:
+112 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+112 silly resolved        tmp: 'tmp/angular-animate-1.6.2.tgz_1486475975354_0.3915575372520834' },
+112 silly resolved     directories: {},
+112 silly resolved     _resolved: 'https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.2.tgz' } ]
+113 info install angular-aria@1.6.2 into /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+114 info install angular-animate@1.6.2 into /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+115 info installOne angular-aria@1.6.2
+116 info installOne angular-animate@1.6.2
+117 verbose node_modules/angular-aria unbuild
+118 info preuninstall angular-aria@1.5.11
+119 verbose node_modules/angular-animate unbuild
+120 info preuninstall angular-animate@1.5.11
+121 info uninstall angular-aria@1.5.11
+122 info uninstall angular-animate@1.5.11
+123 verbose true,/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules,/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules unbuild angular-aria@1.5.11
+124 info postuninstall angular-aria@1.5.11
+125 verbose true,/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules,/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules unbuild angular-animate@1.5.11
+126 info postuninstall angular-animate@1.5.11
+127 verbose tar unpack /Users/wgaggioli/.npm/angular-aria/1.6.2/package.tgz
+128 silly lockFile 12ac8eeb-me-lib-node-modules-angular-aria tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-aria
+129 verbose lock tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-aria /Users/wgaggioli/.npm/12ac8eeb-me-lib-node-modules-angular-aria.lock
+130 silly lockFile a0b7c567-m-angular-aria-1-6-2-package-tgz tar:///Users/wgaggioli/.npm/angular-aria/1.6.2/package.tgz
+131 verbose lock tar:///Users/wgaggioli/.npm/angular-aria/1.6.2/package.tgz /Users/wgaggioli/.npm/a0b7c567-m-angular-aria-1-6-2-package-tgz.lock
+132 verbose tar unpack /Users/wgaggioli/.npm/angular-animate/1.6.2/package.tgz
+133 silly lockFile d61fc6c9-lib-node-modules-angular-animate tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-animate
+134 verbose lock tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-animate /Users/wgaggioli/.npm/d61fc6c9-lib-node-modules-angular-animate.lock
+135 silly lockFile 6bea76b9-ngular-animate-1-6-2-package-tgz tar:///Users/wgaggioli/.npm/angular-animate/1.6.2/package.tgz
+136 verbose lock tar:///Users/wgaggioli/.npm/angular-animate/1.6.2/package.tgz /Users/wgaggioli/.npm/6bea76b9-ngular-animate-1-6-2-package-tgz.lock
+137 silly gunzTarPerm modes [ '755', '644' ]
+138 silly gunzTarPerm modes [ '755', '644' ]
+139 silly gunzTarPerm extractEntry package.json
+140 silly gunzTarPerm extractEntry package.json
+141 silly gunzTarPerm extractEntry README.md
+142 silly gunzTarPerm extractEntry angular-aria.js
+143 silly gunzTarPerm extractEntry README.md
+144 silly gunzTarPerm extractEntry angular-animate.js
+145 silly gunzTarPerm extractEntry angular-animate.min.js
+146 silly gunzTarPerm extractEntry angular-aria.min.js
+147 silly gunzTarPerm extractEntry index.js
+148 silly gunzTarPerm extractEntry LICENSE.md
+149 silly gunzTarPerm extractEntry index.js
+150 silly gunzTarPerm extractEntry LICENSE.md
+151 silly gunzTarPerm extractEntry angular-animate.min.js.map
+152 silly gunzTarPerm extractEntry angular-aria.min.js.map
+153 silly gunzTarPerm extractEntry bower.json
+154 silly gunzTarPerm extractEntry bower.json
+155 silly lockFile 12ac8eeb-me-lib-node-modules-angular-aria tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-aria
+156 silly lockFile 12ac8eeb-me-lib-node-modules-angular-aria tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-aria
+157 silly lockFile a0b7c567-m-angular-aria-1-6-2-package-tgz tar:///Users/wgaggioli/.npm/angular-aria/1.6.2/package.tgz
+158 silly lockFile a0b7c567-m-angular-aria-1-6-2-package-tgz tar:///Users/wgaggioli/.npm/angular-aria/1.6.2/package.tgz
+159 info preinstall angular-aria@1.6.2
+160 verbose readDependencies using package.json deps
+161 verbose readDependencies using package.json deps
+162 silly resolved []
+163 verbose about to build /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-aria
+164 info build /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-aria
+165 verbose linkStuff [ false,
+165 verbose linkStuff   false,
+165 verbose linkStuff   false,
+165 verbose linkStuff   '/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules' ]
+166 info linkStuff angular-aria@1.6.2
+167 verbose linkBins angular-aria@1.6.2
+168 verbose linkMans angular-aria@1.6.2
+169 verbose rebuildBundles angular-aria@1.6.2
+170 info install angular-aria@1.6.2
+171 info postinstall angular-aria@1.6.2
+172 silly lockFile d61fc6c9-lib-node-modules-angular-animate tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-animate
+173 silly lockFile d61fc6c9-lib-node-modules-angular-animate tar:///Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-animate
+174 silly lockFile 6bea76b9-ngular-animate-1-6-2-package-tgz tar:///Users/wgaggioli/.npm/angular-animate/1.6.2/package.tgz
+175 silly lockFile 6bea76b9-ngular-animate-1-6-2-package-tgz tar:///Users/wgaggioli/.npm/angular-animate/1.6.2/package.tgz
+176 info preinstall angular-animate@1.6.2
+177 verbose readDependencies using package.json deps
+178 verbose readDependencies using package.json deps
+179 silly resolved []
+180 verbose about to build /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-animate
+181 info build /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules/angular-animate
+182 verbose linkStuff [ false,
+182 verbose linkStuff   false,
+182 verbose linkStuff   false,
+182 verbose linkStuff   '/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib/node_modules' ]
+183 info linkStuff angular-animate@1.6.2
+184 verbose linkBins angular-animate@1.6.2
+185 verbose linkMans angular-animate@1.6.2
+186 verbose rebuildBundles angular-animate@1.6.2
+187 info install angular-animate@1.6.2
+188 info postinstall angular-animate@1.6.2
+189 info build /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+190 verbose linkStuff [ false,
+190 verbose linkStuff   false,
+190 verbose linkStuff   false,
+190 verbose linkStuff   '/Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime' ]
+191 info linkStuff lib@1.0.0
+192 verbose linkBins lib@1.0.0
+193 verbose linkMans lib@1.0.0
+194 verbose rebuildBundles lib@1.0.0
+195 verbose rebuildBundles [ '.bin',
+195 verbose rebuildBundles   'angular',
+195 verbose rebuildBundles   'angular-animate',
+195 verbose rebuildBundles   'angular-aria',
+195 verbose rebuildBundles   'angular-material',
+195 verbose rebuildBundles   'angular-route',
+195 verbose rebuildBundles   'angularfire',
+195 verbose rebuildBundles   'bootstrap',
+195 verbose rebuildBundles   'copy',
+195 verbose rebuildBundles   'firebase',
+195 verbose rebuildBundles   'grunt',
+195 verbose rebuildBundles   'grunt-contrib-copy',
+195 verbose rebuildBundles   'grunt-contrib-jshint',
+195 verbose rebuildBundles   'grunt-contrib-sass',
+195 verbose rebuildBundles   'grunt-contrib-watch',
+195 verbose rebuildBundles   'jquery',
+195 verbose rebuildBundles   'jshint',
+195 verbose rebuildBundles   'jshint-stylish',
+195 verbose rebuildBundles   'matchdep',
+195 verbose rebuildBundles   'sass' ]
+196 info install lib@1.0.0
+197 info postinstall lib@1.0.0
+198 info prepublish lib@1.0.0
+199 error peerinvalid The package angular does not satisfy its siblings' peerDependencies requirements!
+199 error peerinvalid Peer angular-material@1.1.3 wants angular@>=1.3 <1.6
+199 error peerinvalid Peer angularfire@2.3.0 wants angular@^1.3.0
+200 error System Darwin 13.4.0
+201 error command "node" "/usr/local/bin/npm" "install"
+202 error cwd /Users/wgaggioli/workspace/group-proj/pinterpro/d18-pinterest-thegreatestpinsofalltime/lib
+203 error node -v v0.10.32
+204 error npm -v 1.4.28
+205 error code EPEERINVALID
+206 verbose exit [ 1, true ]
