@@ -26,6 +26,7 @@ console.log("hello from pinfactory");
 	let getPins = (user) => {
 		let userPins = [];
 		return $q((resolve, reject) => {
+			console.log("user at getPins", user);	
 			$http.get(`${FBCreds.databaseURL}/pins.json?orderBy="uid"&equalTo="${user}"`)
 			.then((userPinObject) => {
 				let userPinList = userPinObject.data;

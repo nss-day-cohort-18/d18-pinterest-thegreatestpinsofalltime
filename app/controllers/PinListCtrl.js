@@ -5,8 +5,8 @@ app.controller("PinListCtrl", function($scope, PinFactory, AuthFactory, SearchTe
 	$scope.searchText = SearchTermData;
    let user = AuthFactory.getUser();
 
-
-	PinFactory.getAllPins()
+//calling getPins here gives you the pins tied to your uid, calling getAllPins gives you all the pins
+	PinFactory.getAllPins(user)
 	.then( function(pinList) {
 		$scope.pins = pinList;
 	});
