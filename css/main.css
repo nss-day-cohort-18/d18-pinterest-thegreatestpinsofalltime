@@ -56,11 +56,10 @@ a:-webkit-any-link {
   width: 40px;
   height: 40px; }
 
-<<<<<<< HEAD
 .row {
   display: inline-block;
   margin-left: 5px; }
-=======
+
 /*card detail*/
 .md-card {
   max-width: 30%;
@@ -77,6 +76,5 @@ a:-webkit-any-link {
 
 .card-title {
   display: inline-block; }
->>>>>>> master
 
 /*# sourceMappingURL=main.css.map */
