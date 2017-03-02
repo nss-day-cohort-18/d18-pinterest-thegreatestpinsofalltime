@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("PinNewCtrl", function($scope, PinFactory, BoardFactory, $location, AuthFactory) {
+app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory) {
 
   let user = AuthFactory.getUser();
   // let board = ??????

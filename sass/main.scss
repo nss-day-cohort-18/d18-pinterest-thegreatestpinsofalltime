@@ -6,6 +6,10 @@ body { margin: 30px; }
   font-size: 16px;
 }
 
+.nav-links {
+  margin-bottom: 2.3em;
+}
+
 .search input {
   width: 250px;
   height: 32px;
@@ -29,7 +33,7 @@ body { margin: 30px; }
   margin: 5px;
   color: white;
   background-color: #5bc0de;
-   border-color: #46b8da;
+  border-color: #46b8da;
 }
 
 .login-btn:hover {
@@ -41,7 +45,7 @@ body { margin: 30px; }
 #login-pg {
   display: block;
   text-align: center;
-  width: 40%;
+  width: 30%;
   text-align: center;
   display: block;
   border: 1px solid grey;
@@ -56,6 +60,12 @@ body { margin: 30px; }
 
 // Nav
 
+.pin-img {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
 a:-webkit-any-link {
     color: -webkit-link;
     text-decoration: none !important;
@@ -66,3 +76,48 @@ a:-webkit-any-link {
   width: 40px;
   height: 40px;
 }
+
+.pin-card {
+  display: inline-block;
+  margin-left: 5px;
+  border: 1px solid black;
+  background-color: #c0c1c4;
+  box-shadow: 2px 2px 2px;
+}
+/*card detail*/
+.md-card {
+    max-width: 30%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 450px;
+}
+
+.md-card-image {
+  max-height: 100%;
+  max-width: 100%;
+  
+}
+
+
+.card-button {
+  position: relative;
+}
+
+.card-title {
+  display: inline-block;
+  max-width: 30%; 
+}
+
+.pinItButton:not([disabled]) {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  color: orange;
+  margin-left: 75%;
+  width: 80px;
+  position: absolute;
+  background-color: transparent;
+  }
+
+.pinItButton:not([disabled]):hover {
+  color: red;
+}
+
