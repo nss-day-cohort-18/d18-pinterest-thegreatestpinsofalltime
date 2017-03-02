@@ -6,7 +6,7 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 
 	let user = AuthFactory.getUser();
 
-	PinFactory.getAllPins()
+	PinFactory.getPins(user)
 	.then( function(pinList) {
 		$scope.pins = pinList;
 
