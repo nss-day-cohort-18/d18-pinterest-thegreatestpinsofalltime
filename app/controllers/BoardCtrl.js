@@ -24,4 +24,4 @@ app.controller('BoardCtrl', function($scope, $location, AuthFactory, BoardFactor
         $scope.newBoard = {};
     };
 
-})
+});

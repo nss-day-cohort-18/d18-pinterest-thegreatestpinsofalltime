@@ -13,5 +13,5 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 		$scope.selectedPin = $scope.pins.filter( function(pin) {
 			return pin.id === $routeParams.pinId;
 		})[0];
-	});
-
+  });
+});
