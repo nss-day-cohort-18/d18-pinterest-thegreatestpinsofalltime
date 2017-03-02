@@ -3,20 +3,20 @@
 
 app.factory("BoardFactory", ($q, $http, FBCreds, AuthFactory) => {
 	
-	let getBoardList = () => {
+	let getBoardList = (user) => {
 		let boardObj = [];
-		let user = AuthFactory.getUser();
-
-		// ?orderBy="uid"&equalTo="${user}"
+		// let user = AuthFactory.getUser();
 
 		console.log("BoardFactory");
 		return $q((resolve, reject) => {
-			// console.log("list url", `${FBCreds.databaseURL}/items.json?orderBy="uid"&equalTo="${user}"`);
-			$http.get(`${FBCreds.databaseURL}/boards.json`)
+			console.log("user in getBoardList", user);
+			console.log("list url", `${FBCreds.databaseURL}/boards.json?orderBy="uid"&equalTo="${user}"`); 
+			$http.get(`${FBCreds.databaseURL}/boards.json?orderBy="uid"&equalTo="${user}"`)
 			.then((boardObject) => {
 				let boardCollection = boardObject.data;
 				console.log("boardCollection", boardCollection);
 				Object.keys(boardCollection).forEach((key) => {
+					boardCollection[key].id = key;
 					boardObj.push(boardCollection[key]);
 				});
 				resolve(boardObj);
