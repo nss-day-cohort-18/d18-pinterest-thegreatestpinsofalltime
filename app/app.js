@@ -41,17 +41,17 @@ app.config( function($routeProvider) {
       controller: "PinNewCtrl",
       resolve: {isAuth}
    }).
-   when('/pins/:itemId', {
+   when('/pins/:pinId', {
       templateUrl: "partials/pin-details.html",
       controller: "PinViewCtrl",
       resolve: {isAuth}
    }).
    when('/pins/:pinId/edit', {
-      templateUrl: "partials/item-form.html",
+      templateUrl: "partials/pin-form.html",
       controller: "PinEditCtrl",
       resolve: {isAuth}
    }).
-   otherwise('/'); // Send to blank page as fallback (like an 'else' stmt)
+   otherwise('/'); 
 });
 
 //run when the app loads
