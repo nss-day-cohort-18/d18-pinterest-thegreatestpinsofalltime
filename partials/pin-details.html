@@ -1,10 +1,8 @@
 
 <md-content>
-  <md-card>
-    <div class="card-button">
-      <span class="button-view" ng-hide="postPin(user.id) == true">
-        <md-button class="md-raised" ng-disabled="selectedPin" ng-click="postPin()">Pin It!</md-button>
-      </span>
+  <md-card class="md-card">
+    <div class="card-button" ng-hide="postPin(user.id) == true">
+        <md-button class="md-raised pinItButton" ng-disabled="selectedPin" ng-click="postPin()">Pin It!</md-button>
       <img src="img/testImage.jpg" class="md-card-image" alt="image">
     </div>
     <div class="card-title">
