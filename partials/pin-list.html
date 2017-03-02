@@ -1,9 +1,14 @@
-<div class="row" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
-		<div class="pin-img">{{pin.img}}</div>
-		<p>{{pin.title}}</p>
-		<p>Added by: {{pin.name}}</p>
-		<md-button class="btn md-primary glyphicon glyphicon-pencil"><a ng-href="#!/pins/{{selectedPin.id}}/edit"></a></md-button>
-		<md-button class="btn md-primary glyphicon glyphicon-trash" ng-click="pinDelete(pin.id)"></md-button>
-	</ul>
-	
-</div>
+<h1>All Pins</h1>
+
+<div ng-repeat="pin in pins | filter:{name, title:searchText.search}">
+		<img src="{{pin.img}}" class="pin-img"></img>
+      <p>{{pin.title}}</p>
+      <p>Added by: {{pin.name}}</p>
+ 	 	<md-card-actions layout="row" layout-align="start center">
+	      <md-card-icon-actions>
+	      	<md-button ng-click="addNewPin()" class="md-icon-button" aria-label="icon">
+	      		<md-icon class="material-icons">add</md-icon>
+	      	</md-button>
+      	</md-card-icon-actions>
+      </md-card-actions>
+</div> 

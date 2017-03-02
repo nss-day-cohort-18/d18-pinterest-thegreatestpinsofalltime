@@ -12,7 +12,6 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 				console.log(pinList);
 				Object.keys(pinList).forEach((key) => {
 					pinList[key].id = key;
-
 					allPins.push(pinList[key]);
 				});
 				resolve(allPins);
@@ -20,7 +19,6 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 			.catch((error) => {
 				reject(error);
 			});
-			console.log("newObj", allPins);
 		});
 
 	};
@@ -45,7 +43,7 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 		}); 
 	};
 
-	let postPin = (newPin) => {
+	let postNewPin = (newPin) => {
 		return $q((resolve, reject) => {
 			$http.post(`${FBCreds.databaseURL}/pins.json`,
 				JSON.stringify(newPin))
@@ -72,17 +70,17 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 		});
 	};
 
-	// let getSingleItem = (itemId) => {
-	// 	return $q(function(resolve, reject) {
-	// 		$http.get(`${FBCreds.databaseURL}/items/${itemId}.json`)
-	// 		.then(function(itemObject){
-	// 			resolve(itemObject.data);
-	// 		})
-	// 		.catch(function(error){ 
-	// 			reject(error);
-	// 		});
-	// 	});
-	// };
+	let getSingleItem = (pinId) => {
+		return $q(function(resolve, reject) {
+			$http.get(`${FBCreds.databaseURL}/pins/${pinId}.json`)
+			.then(function(pinObject){
+				resolve(pinObject.data);
+			})
+			.catch(function(error){ 
+				reject(error);
+			});
+		});
+	};
 
 	let updatePin = (pinId, editedPin) => {
 		//properties with leading $$ characters will be stripped since Angular uses that notaton internally
@@ -104,7 +102,7 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 
 	//return so that they can become part of ItemStorage
 
-	return {getAllPins, getPins, postPin, deletePin};
+	return {getAllPins, getPins, postNewPin, deletePin};
 
 	});
 
