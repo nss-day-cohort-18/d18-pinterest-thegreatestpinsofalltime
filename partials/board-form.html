@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<div layout="column" class="inputdemoIcons">
+
+  <br>
+  <md-content class="md-no-momentum">
+    <md-input-container class="md-icon-float md-block">
+      <label>Content URL</label>
+      <input ng-model="newBoard.contentURL" type="text" placeholder="Add URL for your content page">
+    </md-input-container>
+
+    <md-input-container class="md-icon-float md-block">
+      <label>Board Name</label>
+      <input ng-model="newBoard.boardName" type="text" placeholder="Name of your new board">
+    </md-input-container>
+
+    <!-- Add dropdown for which specific board to pin this pin to -->
+
+    <md-button class="md-raised md-warn">Cancel</md-button>
+    <md-button class="md-raised md-primary">{{btnText}}</md-button>
+
+  </md-content>
+
+</div>

@@ -31,6 +31,10 @@ app.config( function($routeProvider) {
       templateUrl: 'partials/login.html',
       controller: "UserCtrl"
    }).
+   when('/boards/list', {
+      templateUrl: 'partials/board-list.html',
+      controller: "BoardViewCtrl"
+   }).
    when('/pins/list', {
       templateUrl: "partials/pin-list.html",
       controller: "PinListCtrl",

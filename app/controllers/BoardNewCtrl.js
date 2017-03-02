@@ -1,6 +1,7 @@
 "use strict";
 
-app.controller('BoardCtrl', function($scope, $location, AuthFactory, BoardFactory){
+app.controller('BoardNewCtrl', function($scope, $location, AuthFactory, BoardFactory){
+console.log("BoardNewCtrl");
 
 	let user = AuthFactory.getUser();
 
@@ -12,11 +13,12 @@ app.controller('BoardCtrl', function($scope, $location, AuthFactory, BoardFactor
 		title: ""
 	};
 
+
 	$scope.addNewBoard = function () {
         console.log("add new Board");
         BoardFactory.postNewBoard($scope.newBoard)
         .then(function(response) {
-        	$location.url("items/list");//change this url to point to the correct spot
+        	$location.url("boards/list");//change this url to point to the correct spot
         });
         // $scope.newBoard.id = $scope.items.length;
         console.log("you added a new item", $scope.newBoard);
@@ -24,4 +26,4 @@ app.controller('BoardCtrl', function($scope, $location, AuthFactory, BoardFactor
         $scope.newBoard = {};
     };
 
-})
+});

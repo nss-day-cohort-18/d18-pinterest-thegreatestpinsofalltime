@@ -1,7 +1,7 @@
 "use strict";
-console.log("hello from pinfactory");
 
 app.factory("PinFactory", ($q, $http, FBCreds) => {
+console.log("hello from pinfactory");
 
 	let getAllPins = () => {
 		let allPins = [];
@@ -9,7 +9,7 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 			$http.get(`${FBCreds.databaseURL}/pins.json`)
 			.then((pinObject) => {
 				let pinList = pinObject.data;
-				console.log(pinList);
+				// console.log(pinList);
 				Object.keys(pinList).forEach((key) => {
 					pinList[key].id = key;
 					allPins.push(pinList[key]);
@@ -44,19 +44,19 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 	// 	}); 
 	// };
 
-	// let postPin = (newItem) => {
-	// 	return $q((resolve, reject) => {
-	// 		$http.post(`${FBCreds.databaseURL}/items.json`,
-	// 			JSON.stringify(newItem))
-	// 		.then((ObjectFromFirebase) => {
-	// 			resolve(ObjectFromFirebase);
-	// 		})
-	// 		.catch((error) => {
-	// 			reject(error);
-	// 		});
-	// 	});
+	let postPin = (newItem) => {
+		return $q((resolve, reject) => {
+			$http.post(`${FBCreds.databaseURL}/items.json`,
+				JSON.stringify(newItem))
+			.then((ObjectFromFirebase) => {
+				resolve(ObjectFromFirebase);
+			})
+			.catch((error) => {
+				reject(error);
+			});
+		});
 
-	// };
+	};
 
 	// let deletePin = (itemId) => {
 	// 	console.log("delete in factory", itemId);

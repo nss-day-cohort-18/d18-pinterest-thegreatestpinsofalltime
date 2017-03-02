@@ -1,7 +1,7 @@
 "use strict";
 
 app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFactory) {
-	$scope.songs = [];
+	$scope.pins = [];
 	console.log($routeParams.pinId);
 
 	let user = AuthFactory.getUser();

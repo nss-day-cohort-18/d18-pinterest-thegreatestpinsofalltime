@@ -1,16 +1,13 @@
 <div class="row" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
-	<ul class="song-card col-xs-12">
-		<li><h1>{{song.name}}</h1></li>
-		<li>{{song.artist}}</li>
-		<li> | </li>
-		<li>{{song.album}}</li>
-		<li> | </li>
-		<li>{{song.year}}</li>
-		<li> | </li>
-		<li>{{song.genre}}</li>
-		<button class="btn btn-success glyphicon glyphicon-pencil"><a ng-href="#!/songs/{{selectedSong.id}}/edit"></a></button>
-		<button class="btn btn-danger glyphicon glyphicon-trash" ng-click="songDelete(item.id)"></button>
-		<hr>
-	</ul>
-	
+        <div class="pin-img">{{pin.img}}</div>
+        <p>{{pin.title}}</p>
+        <p>Added by: {{pin.name}}</p>
+	 <md-card-actions layout="row" layout-align="start center">
+        <md-card-icon-actions>
+           <md-button class="md-icon-button" aria-label="icon">
+              <md-icon class="material-icons">add</md-icon>
+           </md-button>
+        </md-card-icon-actions>
+     </md-card-actions>
+    
 </div>
