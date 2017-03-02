@@ -12,7 +12,7 @@ console.log("BoardNewCtrl");
 		uid: user,
 		title: ""
 	};
-
+    console.log("$scope.newBoard", $scope.newBoard);
 
 	$scope.addNewBoard = function () {
         console.log("add new Board");
