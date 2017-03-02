@@ -60,6 +60,8 @@ body { margin: 30px; }
 
 // Nav
 
+
+
 .pin-img {
   width: 150px;
   height: 150px;
@@ -77,14 +79,25 @@ a:-webkit-any-link {
   height: 40px;
 }
 
+// NG-View
+
+#ng-view {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
 .pin-card {
+  width: 20em;
+  height: 20em;
   display: inline-block;
-  margin-left: 5px;
+  margin: 10px 10px 10px 10px;
+  padding: 20px;
   border: 1px solid black;
+  border-radius: 5px;
   background-color: #c0c1c4;
   box-shadow: 2px 2px 2px;
 }
-/*card detail*/
+
 .md-card {
     max-width: 30%;
     margin-left: 30%;
@@ -95,9 +108,8 @@ a:-webkit-any-link {
 .md-card-image {
   max-height: 100%;
   max-width: 100%;
-  
+ 
 }
-
 
 .card-button {
   position: relative;

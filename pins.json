@@ -14,6 +14,7 @@
 
     "pins": [
                 {   "pinId": "P6rB555T4aVnbnkktrFGLt3q0r1",
+                    "name": "Aaron",
                     "img": "",
                     "uid": "P6rB5Zr3T4aVnbnkktrFGLt3q0r1",
                     "boardId": "",
@@ -22,6 +23,7 @@
                 }
                 {    
                     "pinId": "P5rB5Zr3T4aVn6nkktrFGLt3q0r1",
+                    "name": "Aaron",
                     "uid": "P6rB5Zr3T4aVnbnkktrFGLt3q0r1",
                     "boardId": "",
                     "url": "",
@@ -29,6 +31,7 @@
                 },
                 {    
                     "pinId": "P6rB5Zr3T4aVnbn3ktrFGLt3q0r5",
+                    "name": "Aaron",
                     "uid": "P6rB5Zr3T4aVnbnkktrFGLt3q0r1",
                     "boardId": "",
                     "url": "https://www.pinterest.com/pin/A5U41QAQAO8G5Y1C8hVTnEw/",
