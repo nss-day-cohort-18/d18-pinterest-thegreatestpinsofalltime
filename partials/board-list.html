@@ -1,12 +1,14 @@
+<h2>All Your Boards</h2>
+
 <md-card class="board" ng-repeat="board in boards | filter:{boardId, title}">
      <md-card-header>
         <md-card-avatar>
            <img class="md-user-avatar" src="/img/board-test.png">
         </md-card-avatar>
         <md-card-header-text>
-           <span class="md-title">HTML5</span>
-           <span class="md-subhead">Learn HTML5 @TutorialsPoint.com</span>
-        </md-card-header-text>
+           <span class="md-title">{{board.title}}</span>
+<!--            <span class="md-subhead"></span>
+ -->        </md-card-header-text>
      </md-card-header>
 
      <md-card-title>
@@ -18,7 +20,7 @@
      <md-card-actions layout="row" layout-align="start center">
         <md-card-icon-actions>
            <md-button class="md-icon-button" aria-label="icon">
-              <md-icon class="material-icons" ng-click="BoardFactory.postNewBoard()">add</md-icon>
+              <md-icon class="material-icons" ng-click="postNewBoard()">add</md-icon>
            </md-button>
         </md-card-icon-actions>
      </md-card-actions>
