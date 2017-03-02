@@ -29,7 +29,7 @@ body { margin: 30px; }
   margin: 5px;
   color: white;
   background-color: #5bc0de;
-   border-color: #46b8da;
+  border-color: #46b8da;
 }
 
 .login-btn:hover {
@@ -70,4 +70,26 @@ a:-webkit-any-link {
 .row {
   display: inline-block;
   margin-left: 5px;
+}
+/*card detail*/
+.md-card {
+    max-width:30%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 450px;
+}
+
+.md-card-image {
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+
+.card-button {
+  position: relative;
+}
+
+.card-title {
+  display: inline-block;
 }
