@@ -31,9 +31,15 @@ app.config( function($routeProvider) {
       templateUrl: 'partials/login.html',
       controller: "UserCtrl"
    }).
+   when('/boards/new', {
+      templateUrl: 'partials/board-form.html',
+      controller: "BoardNewCtrl",
+      resolve: {isAuth}
+   }).
    when('/boards/list', {
       templateUrl: 'partials/board-list.html',
-      controller: "BoardViewCtrl"
+      controller: "BoardViewCtrl",
+      resolve: {isAuth}
    }).
    when('/pins/list', {
       templateUrl: "partials/pin-list.html",
