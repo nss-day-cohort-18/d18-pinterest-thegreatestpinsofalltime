@@ -31,6 +31,10 @@ app.config( function($routeProvider) {
       templateUrl: 'partials/login.html',
       controller: "UserCtrl"
    }).
+   when('/pins/all', {
+      templateUrl: 'partials/pin-list.html',
+      controller: "PinAllCtrl"
+   }).
    when('/boards/new', {
       templateUrl: 'partials/board-form.html',
       controller: "BoardNewCtrl",
@@ -61,7 +65,10 @@ app.config( function($routeProvider) {
       controller: "PinEditCtrl",
       resolve: {isAuth}
    }).
-   otherwise('/'); 
+   otherwise('/pins/all', {
+    templateUrl: "partials/pin-list.html",
+    controller: "PinViewCtrl"
+   }); 
 });
 
 //run when the app loads

@@ -7,8 +7,8 @@ body { margin: 30px; }
 }
 
 .nav-links {
-  color: blue !important;
-  margin-bottom: 3.4em;
+
+  margin-bottom: 2.4em;
 }
 
 .search input {
@@ -60,14 +60,6 @@ body { margin: 30px; }
 
 // Nav
 
-
-
-.pin-img {
-  width: 150px;
-  height: 150px;
-  text-align: center;
-}
-
 a:-webkit-any-link {
     color: -webkit-link;
     text-decoration: none !important;
@@ -81,21 +73,32 @@ a:-webkit-any-link {
 
 // NG-View
 
+.pin-img {
+  width: 300px;
+  height: 250px;
+  text-align: center;
+}
+
 #ng-view {
   margin-right: 2%;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 .pin-card {
+  text-align: center;
   width: 20em;
-  height: 20em;
+  height: 25em;
   display: inline-block;
   margin: 10px 10px 10px 10px;
-  padding: 20px;
+  padding: 40px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #c0c1c4;
+  background-color: #e0e0e0;
   box-shadow: 2px 2px 2px;
+}
+
+.pin-btns {
+  margin-left: 75px !important;
 }
 
 .md-card {

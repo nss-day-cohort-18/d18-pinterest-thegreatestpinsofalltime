@@ -72,7 +72,7 @@ console.log("hello from pinfactory");
 		});
 	};
 
-	let getSingleItem = (pinId) => {
+	let getSinglePin = (pinId) => {
 		return $q(function(resolve, reject) {
 			$http.get(`${FBCreds.databaseURL}/pins/${pinId}.json`)
 			.then(function(pinObject){
