@@ -12,6 +12,7 @@ app.factory("PinFactory", ($q, $http, FBCreds) => {
 				console.log(pinList);
 				Object.keys(pinList).forEach((key) => {
 					pinList[key].id = key;
+
 					allPins.push(pinList[key]);
 				});
 				resolve(allPins);
