@@ -6,7 +6,7 @@ app.controller("PinListCtrl", function($scope, PinFactory, AuthFactory, SearchTe
    let user = AuthFactory.getUser();
 
 
-	PinFactory.getAllPins()
+	PinFactory.getPins(user)
 	.then( function(pinList) {
 		$scope.pins = pinList;
 	});
@@ -15,7 +15,7 @@ app.controller("PinListCtrl", function($scope, PinFactory, AuthFactory, SearchTe
       console.log("delete this song", pinId);
       PinFactory.deletePin(pinId)
       .then( function(response) {
-         PinFactory.getAllPins().then( function(pinList) {
+         PinFactory.getPins(user).then( function(pinList) {
             $scope.pins = pinList;
          });
       });
