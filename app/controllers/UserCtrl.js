@@ -2,7 +2,7 @@
 
 //login, logout, register, loginGoogle, clever conditional, authfactory
 
-app.controller("UserCtrl", function($scope, $window, AuthFactory, $location){
+app.controller("UserCtrl", function($scope, $window, AuthFactory, UserFactory, $location){
 
     //run these when controller loads
     $scope.account = {
@@ -59,9 +59,26 @@ app.controller("UserCtrl", function($scope, $window, AuthFactory, $location){
         AuthFactory.authWithProvider()
         .then(function(result) {
             var user = result.user.uid;
-            console.log("logged in user:", user);
+            var newName = result.user.displayName;
+            console.log("logged in user name:", newName);
+            $scope.newUser = {
+              uid: user,
+              name: newName
+            };
+            UserFactory.checkNewUser($scope.newUser)
+            .then ((userCollection) => {
+              let collectionLength = Object.keys(userCollection).length;
+              if (collectionLength > 0) {
+                console.log('UID exists', Object.keys(userCollection).length);
+                $window.location.href = "#!/pins/list";
+              } else {
+                console.log('UID does not exist');
+                $scope.addNewUser($scope.newUser);
+              }
+            });
+
             //Once logged in, go to another view
-            $window.location.href = "#!/pins/list";
+
             // $scope.$apply();
         }).catch(function(error) {
             // Handle the Errors.
@@ -72,9 +89,14 @@ app.controller("UserCtrl", function($scope, $window, AuthFactory, $location){
             var email = error.email;
             // The firebase.auth.AuthCredential type that was used.
             var credential = error.credential;
-            
+
         });
     };
 
-
-}); 
+    $scope.addNewUser = (newUser) => {
+      UserFactory.postNewUser(newUser)
+      .then ( () => {
+        $window.location.href = "#!/pins/list";
+      });
+    };
+});
