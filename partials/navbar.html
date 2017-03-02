@@ -2,15 +2,15 @@
 
   <div class="center">
     <ul class="center">
-          <a href="#"><img class="brand-logo left" src="img/pin-logo.png"></img></a>
-          <md-button class="md-primary" ng-show="!isLoggedIn"><a ng-href="#!/login">Login</a></md-button>
-          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/pins/new">New Pin</a></md-button>
-          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/pins/list">All Pins</a></md-button>
-          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/boards/new">New Board</a></md-button>
-          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/boards/list">All Boards</a></md-button>
-          <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/logout">Logout</a></md-button>
+      <a href="#"><img class="brand-logo left" src="img/pin-logo.png"></img></a>
+      <md-button class="nav-items md-primary" ng-show="!isLoggedIn"><a ng-href="#!/login">Login</a></md-button>
+      <md-button class="nav-items md-primary" ng-show="isLoggedIn"><a ng-href="#!/pins/new">New Pin</a></md-button>
+      <md-button class="nav-items md-primary" ng-show="isLoggedIn"><a ng-href="#!/pins/list">All Pins</a></md-button>
+      <md-button class="nav-items md-primary" ng-show="isLoggedIn"><a ng-href="#!/boards/new">New Board</a></md-button>
+      <md-button class="nav-items md-primary" ng-show="isLoggedIn"><a ng-href="#!/boards/list">All Boards</a></md-button>
+      <md-button class="nav-items md-primary" ng-show="isLoggedIn"><a ng-href="#!/logout">Logout</a></md-button>
 
-        </ul>
+    </ul>
       </div>
       <hr ng-show="!isLoggedIn">
   <div class="col s6" ng-show="isLoggedIn">

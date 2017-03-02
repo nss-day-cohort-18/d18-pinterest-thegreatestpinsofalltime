@@ -30,4 +30,6 @@ lib/.sass-cache
 app/values/fb-creds.js
 dist
 
+css/main.css.map
+
 # End of https://www.gitignore.io/api/osx
