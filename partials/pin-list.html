@@ -1,10 +1,9 @@
 <h1>All Pins</h1>
 
 <div class="pin-card" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
-		<img src="{{pin.img}}" class="pin-img">{{pin.img}}</img>
-
-      <p>{{pin.title}}</p>
-      <p>Added by: {{pin.name}}</p>
+		<img src="{{pin.img}}" class="pin-img"></img>
+      <h2>{{pin.title}}</h2>
+      <p>Pinned by: {{pin.name}}</p>
  	 	<md-card-actions layout="row" layout-align="start center">
 	      <md-card-icon-actions>
 	      	<md-button ng-click="addNewPin()" class="md-icon-button" aria-label="icon">

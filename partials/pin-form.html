@@ -3,24 +3,25 @@
 
   <br>
   <md-content class="md-no-momentum">
+    
+    <md-input-container class="md-icon-float md-block">
+      <label>Pin Title</label>
+      <input ng-model="newPin.title" type="text" placeholder="Name your new pin">
+    </md-input-container>
+
     <md-input-container class="md-icon-float md-block">
       <label>Content URL</label>
-      <input ng-model="newPin.contentURL" type="text" placeholder="Add URL for your content page">
+      <input ng-model="newPin.url" type="text" placeholder="Add URL for your content page">
     </md-input-container>
 
     <md-input-container class="md-icon-float md-block">
       <label>Photo URL</label>
-      <input ng-model="newPin.photoURL" type="text" placeholder="URL for Pin Photo">
+      <input ng-model="newPin.img" type="text" placeholder="URL for Pin Photo">
     </md-input-container>
 
     <md-input-container class="md-icon-float md-block">
       <label>Pin Name</label>
-      <input ng-model="newPin.pinName" type="text" placeholder="Name of your new pin">
-    </md-input-container>
-
-    <md-input-container class="md-icon-float md-block">
-      <label>Description</label>
-      <textarea ng-model="newPin.description" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+      <input ng-model="newPin.name" type="text" placeholder="Your name">
     </md-input-container>
 
     <!-- Add dropdown for which specific board to pin this pin to -->

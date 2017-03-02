@@ -8,12 +8,12 @@ app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory
   $scope.title = "Add A New Pin";
   $scope.btnText = "Add New Pin";
   $scope.newPin = {
-    contentURL: "",
-    photoURL: "",
-    pinName: "",
-    description: "",
-    //boardId: board,
-    uid: user
+    boardId: "",
+    img: "",
+    title: "",
+    uid: user,
+    url: "",
+    description: ""
   };
 
 
