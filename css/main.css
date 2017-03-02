@@ -100,4 +100,15 @@ a:-webkit-any-link {
 .pinItButton:not([disabled]):hover {
   color: red; }
 
+.editButton:not([disabled]) {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  color: orange;
+  margin-left: 75%;
+  width: 80px;
+  position: absolute;
+  background-color: grey; }
+
+.editButton:not([disabled]):hover {
+  color: red; }
+
 /*# sourceMappingURL=main.css.map */

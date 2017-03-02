@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFactory, BoardFactory){
+app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFactory){
   $scope.title = "Edit Pin";
   $scope.btnText = "Update";
   $scope.newPin = {};
@@ -8,7 +8,7 @@ app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFacto
   PinFactory.getSinglePin($routeParams.pinId)
   .then(function successCallback(response){
      console.log("getSinglePinresponse", response);
-      $scope.newTask = response;
+      $scope.newPin = response;
   });
 
   $scope.addNewPin = function(){
