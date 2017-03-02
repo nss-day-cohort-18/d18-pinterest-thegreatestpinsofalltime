@@ -5,17 +5,18 @@ app.controller("PinListCtrl", function($scope, PinFactory, AuthFactory, SearchTe
 	$scope.searchText = SearchTermData;
    let user = AuthFactory.getUser();
 
-//calling getPins here gives you the pins tied to your uid, calling getAllPins gives you all the pins
-   PinFactory.getPins(user)
-   .then( function(pinList) {
-      $scope.pins = pinList;
-   });
+
+	PinFactory.getPins(user)
+	.then( function(pinList) {
+		$scope.pins = pinList;
+	});
+
 
 	$scope.pinDelete = function(pinId) {
       console.log("delete this pin", pinId);
       PinFactory.deletePin(pinId)
       .then( function(response) {
-         PinFactory.getAllPins().then( function(pinList) {
+         PinFactory.getPins(user).then( function(pinList) {
             $scope.pins = pinList;
          });
       });
