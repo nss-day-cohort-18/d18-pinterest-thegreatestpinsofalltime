@@ -2,6 +2,8 @@
 
 app.controller("PinAllCtrl", function($scope, PinFactory, AuthFactory, SearchTermData, $routeParams) {
 
+   
+   
 	$scope.searchText = SearchTermData;
    let user = AuthFactory.getUser();
 
