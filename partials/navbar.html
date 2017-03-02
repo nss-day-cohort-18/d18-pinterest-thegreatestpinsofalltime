@@ -1,12 +1,7 @@
 <nav class="nav-wrapper" md-block ng-controller="NavCtrl">
 
-
- <!--      <div class="col s2 md-block navbar-header">
-        <a href="#"><img class="brand-logo left" src="img/pin-logo.png"></img></a>
-      </div> -->
-
-
-      <div class="center">
+  <div class="center">
+    <ul class="center">
       <a href="#"><img class="brand-logo left" src="img/pin-logo.png"></img></a>
         <ul class="center">
           <md-button class="md-primary" ng-show="!isLoggedIn"><a ng-href="#!/login">Login</a></md-button>
@@ -16,12 +11,11 @@
           <md-button class="md-primary" ng-show="isLoggedIn"><a ng-href="#!/logout">Logout</a></md-button>
         </ul>
       </div>
-
-      <div class="col s6"><!--  ng-show="isLoggedIn"> -->
-          <md-input-container class="md-block" flex-gt-sm>
-            <i class="material-icons"></i>
-            <input type="text" class="fa fa-search form-control" placeholder="Search Pinterest..." ng-model="searchText.search">
-          </md-input-container>
-      </div>
+  <div class="col s6" ng-show="isLoggedIn">
+    <md-input-container class="md-block" flex-gt-sm>
+    <i class="material-icons"></i>
+    <input type="text" class="fa fa-search form-control" placeholder="Search Pinterest..." ng-model="searchText.search">
+    </md-input-container>
+  </div>
 
 </nav>

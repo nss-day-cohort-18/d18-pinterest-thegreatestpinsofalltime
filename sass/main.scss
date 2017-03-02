@@ -6,6 +6,10 @@ body { margin: 30px; }
   font-size: 16px;
 }
 
+.nav-links {
+  margin-bottom: 2.3em;
+}
+
 .search input {
   width: 250px;
   height: 32px;
@@ -41,7 +45,7 @@ body { margin: 30px; }
 #login-pg {
   display: block;
   text-align: center;
-  width: 40%;
+  width: 30%;
   text-align: center;
   display: block;
   border: 1px solid grey;
@@ -55,6 +59,12 @@ body { margin: 30px; }
 
 
 // Nav
+
+.pin-img {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
 
 a:-webkit-any-link {
     color: -webkit-link;
@@ -76,7 +86,7 @@ a:-webkit-any-link {
 }
 /*card detail*/
 .md-card {
-    max-width:30%;
+    max-width: 30%;
     margin-left: 30%;
     margin-right: 30%;
     height: 450px;
