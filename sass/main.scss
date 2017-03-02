@@ -29,7 +29,7 @@ body { margin: 30px; }
   margin: 5px;
   color: white;
   background-color: #5bc0de;
-   border-color: #46b8da;
+  border-color: #46b8da;
 }
 
 .login-btn:hover {
@@ -81,18 +81,6 @@ a:-webkit-any-link {
 
 }
 
-.md-button.md-raised:not([disabled]) {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-    color: white;
-    margin-left: 75%;
-    width: 80px;
-    position: absolute;
-    background-color: transparent;
-    }
-
-.md-button.md-raised:not([disabled]):hover {
-    color: red;
-}
 
 .card-button {
   position: relative;
