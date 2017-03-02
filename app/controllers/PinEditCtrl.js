@@ -1,6 +1,9 @@
 'use strict';
 
-app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFactory){
+app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFactory, BoardFactory, AuthFactory){
+
+  let user = AuthFactory.getUser();
+
   $scope.title = "Edit Pin";
   $scope.btnText = "Update";
   $scope.newPin = {};
@@ -18,4 +21,10 @@ app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFacto
       $location.url("/pins/list");
     });
   };
+
+  BoardFactory.getBoardList(user)
+	.then( function(boardList) {
+		$scope.boards = boardList;
+  });
+
 });

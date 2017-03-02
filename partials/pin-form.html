@@ -3,7 +3,7 @@
 
   <br>
   <md-content class="md-no-momentum">
-    
+
     <md-input-container class="md-icon-float md-block">
       <label>Your Name</label>
       <input ng-model="newPin.name" type="text" placeholder="Your name">
@@ -24,10 +24,11 @@
       <input ng-model="newPin.img" type="text" placeholder="URL for Pin Photo">
     </md-input-container>
 
-   
-
-
     <!-- Add dropdown for which specific board to pin this pin to -->
+      <label>Choose Board:</label>
+      <select ng-model="newPin.boardId">
+        <option ng-repeat="board in boards" value="{{board.id}}">{{board.title}}</option>
+      </select>
 
     <md-button class="md-raised md-warn">Cancel</md-button>
     <md-button ng-click="addNewPin()" class="md-raised md-primary">{{btnText}}</md-button>

@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory) {
+app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory, BoardFactory) {
 
   let user = AuthFactory.getUser();
   // let board = ??????
@@ -26,4 +26,10 @@ app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory
     console.log("you added a new Pin:", $scope.newPin);
     $scope.newPin = {};
   };
+
+  BoardFactory.getBoardList(user)
+	.then( function(boardList) {
+		$scope.boards = boardList;
+  });
+
 });
