@@ -44,19 +44,19 @@ console.log("hello from pinfactory");
 	// 	}); 
 	// };
 
-	// let postPin = (newItem) => {
-	// 	return $q((resolve, reject) => {
-	// 		$http.post(`${FBCreds.databaseURL}/items.json`,
-	// 			JSON.stringify(newItem))
-	// 		.then((ObjectFromFirebase) => {
-	// 			resolve(ObjectFromFirebase);
-	// 		})
-	// 		.catch((error) => {
-	// 			reject(error);
-	// 		});
-	// 	});
+	let postPin = (newItem) => {
+		return $q((resolve, reject) => {
+			$http.post(`${FBCreds.databaseURL}/items.json`,
+				JSON.stringify(newItem))
+			.then((ObjectFromFirebase) => {
+				resolve(ObjectFromFirebase);
+			})
+			.catch((error) => {
+				reject(error);
+			});
+		});
 
-	// };
+	};
 
 	// let deletePin = (itemId) => {
 	// 	console.log("delete in factory", itemId);
