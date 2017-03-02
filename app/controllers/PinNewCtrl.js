@@ -3,7 +3,6 @@
 app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory, BoardFactory) {
 
   let user = AuthFactory.getUser();
-  // let board = ??????
 
   $scope.title = "Add A New Pin";
   $scope.btnText = "Add New Pin";
