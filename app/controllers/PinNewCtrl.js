@@ -3,6 +3,8 @@
 app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory, BoardFactory) {
 
   let user = AuthFactory.getUser();
+  let profileName = AuthFactory.getName();
+  console.log('User Name Display Name is: ', profileName);
 
   $scope.title = "Add A New Pin";
   $scope.btnText = "Add New Pin";
@@ -12,6 +14,7 @@ app.controller("PinNewCtrl", function($scope, PinFactory, $location, AuthFactory
     title: "",
     uid: user,
     url: "",
+    pinner: profileName,
     description: ""
   };
 
