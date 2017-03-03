@@ -1,10 +1,11 @@
 "use strict";
 
 app.factory('AuthFactory', function(){
-	
+
 	//currentUser, createUser, loginUser, logoutUser, isAuthenticated, getUser
 
 	let currentUser = null;
+	let currentName = null;
 
 	let createUser = function(userObj){
 		return firebase.auth().createUserWithEmailAndPassword(userObj.email, userObj.password)
@@ -35,6 +36,7 @@ app.factory('AuthFactory', function(){
 			firebase.auth().onAuthStateChanged( (user) => {
 				if (user){
 					currentUser = user.uid;
+					currentName = user.displayName;
 					resolve(true);
 				}else {
 					resolve(false);
@@ -47,13 +49,17 @@ app.factory('AuthFactory', function(){
 		return currentUser;
 	};
 
+	let getName = function(){
+		return currentName;
+	};
+
 	let provider = new firebase.auth.GoogleAuthProvider();
 
 	let authWithProvider= function(){
     	return firebase.auth().signInWithPopup(provider);
-  	};	
+  	};
 
-	return {createUser, loginUser, logoutUser, isAuthenticated, getUser, authWithProvider};
+	return {createUser, loginUser, logoutUser, isAuthenticated, getUser, authWithProvider, getName};
 
 
 });

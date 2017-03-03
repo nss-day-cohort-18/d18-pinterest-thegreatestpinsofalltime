@@ -1,7 +1,7 @@
 
 <!-- START SEARCH BAR -->
     <md-icon id="search-icon" class="material-icons">search</md-icon>
-   	<md-input-container> 	
+   	<md-input-container>
       	<i class="material-icons">
        	<input id="search-input" type="text" class="fa fa-search form-control" placeholder="Search Pins..." ng-model="searchText.search">
       </i>
@@ -18,7 +18,7 @@
 
       <h2>{{pin.title}}</h2>
       <b>On the board: </b><b ng-repeat="board in boards">{{board.title}}</b>
-      <p>Pinned by: {{pin.name}}</p>
+      <p>Pinned by: {{pin.pinner}}</p>
       <!-- <a href="{{pin.url}}">See Page</a> -->
 
 
@@ -28,15 +28,13 @@
 	      	<md-button ng-show="potato" ng-click="addPin()" class="pin-btns md-icon-button" aria-label="icon">
 	      		<md-icon class="material-icons">add</md-icon>
 	      	</md-button>
-	      	
+
 	      	<a ng-href="#!/pins/{{pin.id}}"><md-icon class="pin-btns material-icons">zoom_in</md-icon></a>
-	      	
+
 	      	<md-button ng-hide="" ng-click="pinDelete(pin.id)" class="pin-btns md-icon-button" aria-label="icon">
 	      		<md-icon class="material-icons">delete</md-icon>
 	      	</md-button>
       	</md-card-icon-actions>
       </md-card-actions>
-</div> 
+</div>
 <!-- END NG-VIEW -->
-
-
