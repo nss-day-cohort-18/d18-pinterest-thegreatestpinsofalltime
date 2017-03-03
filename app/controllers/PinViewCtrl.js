@@ -1,6 +1,10 @@
 "use strict";
 
 app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFactory, $location) {
+	
+	$scope.potato = true;
+	console.log("it's loading the right ctrl pinview");
+ 
 	$scope.pins = [];
 	console.log($routeParams.pinId);
 
@@ -29,10 +33,10 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 		newPin.uid = user;
 		newPin.id = undefined;
 		PinFactory.postNewPin(newPin);
-	}
+	};
 
 	$scope.editPin = function(){
 		$location.url("/pins/:pinId/edit");
-	}
+	};
 
 });
