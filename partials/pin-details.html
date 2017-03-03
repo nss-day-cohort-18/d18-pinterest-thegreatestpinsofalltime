@@ -1,6 +1,6 @@
 
 <md-content>
-  <md-card class="md-card">
+  <md-card class="pinDetailCard md-card">
     <div class="card-button">
           <md-button class="md-raised pinItButton" ng-disabled="isPinned" ng-click="addPin()">Pin It!</md-button> 
       <img src={{selectedPin.img}} class="md-card-image" alt="image">
@@ -9,7 +9,8 @@
       <md-card-title>
         <md-card-title-text>
           <span class="md-headline">{{selectedPin.title}}</span>
-          <span class="md-subhead">{{selectedPin.name}}</span>
+          <span class="md-subhead">Pinned by: {{selectedPin.name}}</span>
+          <a href="{{selectedPin.url}}">See More</a>
         </md-card-title-text>
       </md-card-title>
       <md-button class="md-raised editButton" ng-disabled="!isPinned" ng-click="editPin()">Edit Pin</md-button>
