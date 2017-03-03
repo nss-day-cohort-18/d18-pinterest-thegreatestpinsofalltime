@@ -30,7 +30,7 @@
         <option ng-repeat="board in boards" value="{{board.id}}">{{board.title}}</option>
       </select>
 
-    <md-button class="md-raised md-warn">Cancel</md-button>
+    <md-button ng-click="getPins(user)" class="md-raised md-warn">Cancel</md-button>
     <md-button ng-click="addNewPin()" class="md-raised md-primary">{{btnText}}</md-button>
 
   </md-content>

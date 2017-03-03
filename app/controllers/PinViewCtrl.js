@@ -29,10 +29,10 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 		newPin.uid = user;
 		newPin.id = undefined;
 		PinFactory.postNewPin(newPin);
-	}
+	};
 
 	$scope.editPin = function(){
 		$location.url("/pins/:pinId/edit");
-	}
+	};
 
 });
