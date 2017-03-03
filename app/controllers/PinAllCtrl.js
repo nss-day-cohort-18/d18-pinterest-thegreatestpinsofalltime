@@ -2,8 +2,7 @@
 
 app.controller("PinAllCtrl", function($scope, PinFactory, AuthFactory, SearchTermData, $routeParams) {
 
-   
-   
+   $scope.heading = "Discover Pins";
 	$scope.searchText = SearchTermData;
    let user = AuthFactory.getUser();
 
