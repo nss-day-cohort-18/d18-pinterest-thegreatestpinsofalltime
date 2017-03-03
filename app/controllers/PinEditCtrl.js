@@ -23,6 +23,10 @@ app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFacto
     });
   };
 
+  $scope.cancelBtn = function(){
+   $location.url("/pins/list");
+ };
+
   BoardFactory.getBoardList(user)
 	.then( function(boardList) {
 		$scope.boards = boardList;
