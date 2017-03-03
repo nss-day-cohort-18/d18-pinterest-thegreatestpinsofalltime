@@ -6,12 +6,12 @@ app.controller('BoardViewCtrl', function($scope, $routeParams, BoardFactory, Aut
 	console.log("test1");
 
 	let user = AuthFactory.getUser();
-	BoardFactory.getBoardList()
+	BoardFactory.getBoardList(user)
 	.then( function(boardList) {
 		$scope.boards = boardList;
 
 		$scope.selectedBoard = $scope.boards.filter( function(boards) {
-			return boards.id === $routeParams.boardId;
+			return boards.uid === $routeParams.uid;
 		})[1];
 	});
 

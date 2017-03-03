@@ -1,5 +1,5 @@
+
 <!-- START SEARCH BAR -->
-	
     	<md-icon id="search-icon" class="material-icons">search</md-icon>
    	<md-input-container> 	
       <i class="material-icons">
@@ -12,6 +12,7 @@
 <!-- START NG-VIEW -->
 <h1>{{heading}}</h1>
 
+
 <div class="pin-card" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
 		<img src="{{pin.img}}" class="pin-img"></img>
 
@@ -23,6 +24,8 @@
 	      	<md-button ng-click="addNewPin()" class="pin-btns md-icon-button" aria-label="icon">
 	      		<md-icon class="material-icons">add</md-icon>
 	      	</md-button>
+	      	
+	      	<a ng-href="#!/pins/{{pin.id}}"><md-icon class="material-icons">zoom_in</md-icon></a>
 	      	
 	      	<md-button ng-click="pinDelete(pin.id)" class="pin-btns md-icon-button" aria-label="icon">
 	      		<md-icon class="material-icons">delete</md-icon>

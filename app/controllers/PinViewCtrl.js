@@ -14,7 +14,16 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 			return pin.id === $routeParams.pinId;
 		})[0];
 
+		if (user === $scope.selectedPin.uid) {
+			$scope.isPinned = true;
+		} else {
+			$scope.isPinned = false;
+		}
+
+		$scope.isPinned	= user === $scope.selectedPin.uid;
 	});
+
+
 });
 
 

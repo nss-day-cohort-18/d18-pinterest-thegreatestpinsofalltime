@@ -2,20 +2,19 @@
 <md-content>
   <md-card class="md-card">
     <div class="card-button" ng-hide="postPin(user.id) == true">
-          <md-button class="md-raised pinItButton" ng-disabled="selectedPin" ng-click="postPin()">Pin It!</md-button> 
-      <img src="img/testImage.jpg" class="md-card-image" alt="image">
+          <md-button class="md-raised pinItButton" ng-disabled="isPinned" ng-click="postPin()">Pin It!</md-button> 
+      <img src={{selectedPin.img}} class="md-card-image" alt="image">
     </div>
     <div class="card-title">
       <md-card-title>
         <md-card-title-text>
-          <span class="md-headline">{{selectedPin.title}} Title</span>
-          <span class="md-subhead">{{selectedPin.userName}} User</span>
+          <span class="md-headline">{{selectedPin.title}}</span>
+          <span class="md-subhead">{{selectedPin.name}}</span>
         </md-card-title-text>
       </md-card-title>
-      <md-button class="md-raised editButton" ng-disabled="selectedPin" ng-click="getSinglePin()">Edit Pin</md-button>
+      <md-button class="md-raised editButton" ng-disabled="!isPinned" ng-click="getSinglePin()">Edit Pin</md-button>
     </div>
   </md-card>
 </md-content>
 
-<!-- if button is already pinned to user's board, needs to display deactivated -->
 

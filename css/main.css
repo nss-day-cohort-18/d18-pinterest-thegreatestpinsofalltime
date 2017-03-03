@@ -115,7 +115,7 @@ a:-webkit-any-link {
 .pinItButton:not([disabled]) {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   color: orange;
-  margin-left: 75%;
+  margin-left: 10px;
   width: 80px;
   position: absolute;
   background-color: transparent; }
@@ -126,7 +126,7 @@ a:-webkit-any-link {
 .editButton:not([disabled]) {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   color: orange;
-  margin-left: 75%;
+  margin-left: 10px;
   width: 80px;
   position: absolute;
   background-color: grey; }
