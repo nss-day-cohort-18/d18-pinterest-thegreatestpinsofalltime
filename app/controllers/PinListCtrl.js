@@ -5,7 +5,7 @@ app.controller("PinListCtrl", function($scope, PinFactory, BoardFactory, AuthFac
 
    $scope.heading = "My Pins";
    $scope.isLoggedIn = false;
-	$scope.searchText = SearchTermData;
+	 $scope.searchText = SearchTermData;
    let user = AuthFactory.getUser();
 
 	PinFactory.getPins(user)
