@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFactory) {
+app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFactory, $location) {
 	$scope.pins = [];
 	console.log($routeParams.pinId);
 
@@ -23,10 +23,16 @@ app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFa
 		$scope.isPinned	= user === $scope.selectedPin.uid;
 	});
 
+	$scope.addPin = function(){
+		let newPin = $scope.selectedPin;
+
+		newPin.uid = user;
+		newPin.id = undefined;
+		PinFactory.postNewPin(newPin);
+	}
+
+	$scope.editPin = function(){
+		$location.url("/pins/:pinId/edit");
+	}
 
 });
-
-
-
-
-

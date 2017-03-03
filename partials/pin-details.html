@@ -1,8 +1,8 @@
 
 <md-content>
   <md-card class="md-card">
-    <div class="card-button" ng-hide="postPin(user.id) == true">
-          <md-button class="md-raised pinItButton" ng-disabled="isPinned" ng-click="postPin()">Pin It!</md-button> 
+    <div class="card-button">
+          <md-button class="md-raised pinItButton" ng-disabled="isPinned" ng-click="addPin()">Pin It!</md-button> 
       <img src={{selectedPin.img}} class="md-card-image" alt="image">
     </div>
     <div class="card-title">
@@ -12,7 +12,7 @@
           <span class="md-subhead">{{selectedPin.name}}</span>
         </md-card-title-text>
       </md-card-title>
-      <md-button class="md-raised editButton" ng-disabled="!isPinned" ng-click="getSinglePin()">Edit Pin</md-button>
+      <md-button class="md-raised editButton" ng-disabled="!isPinned" ng-click="editPin()">Edit Pin</md-button>
     </div>
   </md-card>
 </md-content>
