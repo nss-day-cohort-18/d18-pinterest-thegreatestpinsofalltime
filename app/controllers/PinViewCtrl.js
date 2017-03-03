@@ -1,6 +1,10 @@
 "use strict";
 
 app.controller("PinViewCtrl", function ($scope, $routeParams, PinFactory, AuthFactory, $location) {
+	
+	$scope.potato = true;
+	console.log("it's loading the right ctrl pinview");
+ 
 	$scope.pins = [];
 	console.log($routeParams.pinId);
 

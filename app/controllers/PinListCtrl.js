@@ -1,6 +1,10 @@
 "use strict";
 
-app.controller("PinListCtrl", function($scope, PinFactory, BoardFactory, AuthFactory, SearchTermData, $routeParams) {
+
+app.controller("PinListCtrl", function($scope, PinFactory, AuthFactory, SearchTermData, $routeParams, $location) {
+console.log("this is pinlistctrl");
+
+$scope.potato = false;
 
 
    $scope.heading = "My Pins";
@@ -11,6 +15,7 @@ app.controller("PinListCtrl", function($scope, PinFactory, BoardFactory, AuthFac
 	PinFactory.getPins(user)
 	.then( function(pinList) {
 		$scope.pins = pinList;
+      
 	});
 
    BoardFactory.getBoardList(user)
