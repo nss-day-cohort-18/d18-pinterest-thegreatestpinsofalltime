@@ -45,6 +45,11 @@ app.config( function($routeProvider) {
       controller: "BoardViewCtrl",
       resolve: {isAuth}
    }).
+   when('/boards/list/:boardId', {
+      templateUrl: 'partials/pin-list.html',
+      controller: "PinsByBoardCtrl",
+      resolve: {isAuth}
+   }).
    when('/pins/list', {
       templateUrl: "partials/pin-list.html",
       controller: "PinListCtrl",
@@ -68,7 +73,7 @@ app.config( function($routeProvider) {
    otherwise('/pins/all', {
     templateUrl: "partials/pin-list.html",
     controller: "PinViewCtrl"
-   }); 
+   });
 });
 
 //run when the app loads
@@ -82,6 +87,3 @@ app.run(($location, FBCreds) => {
 
    firebase.initializeApp(authConfig);
 });
-
-
-
