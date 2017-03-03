@@ -14,7 +14,7 @@
 
 
 <div class="pin-card" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
-		<img src="{{pin.img}}" class="pin-img"></img>
+		<a ng-href="#!/pins/{{pin.id}}"><img src="{{pin.img}}" class="pin-img"></img></a>
 
       <h2>{{pin.title}}</h2>
       <p>Pinned by: {{pin.name}}</p>
