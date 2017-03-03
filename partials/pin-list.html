@@ -1,9 +1,9 @@
 
 <!-- START SEARCH BAR -->
-    	<md-icon id="search-icon" class="material-icons">search</md-icon>
+    <md-icon id="search-icon" class="material-icons">search</md-icon>
    	<md-input-container> 	
-      <i class="material-icons">
-        <input id="search-input" type="text" class="fa fa-search form-control" placeholder="Search Pins..." ng-model="searchText.search">
+      	<i class="material-icons">
+       	<input id="search-input" type="text" class="fa fa-search form-control" placeholder="Search Pins..." ng-model="searchText.search">
       </i>
     </md-input-container>
 
@@ -14,10 +14,13 @@
 
 
 <div class="pin-card" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
-		<img src="{{pin.img}}" class="pin-img"></img>
+		<a ng-href="#!/pins/{{pin.id}}"><img src="{{pin.img}}" class="pin-img"></img></a>
 
       <h2>{{pin.title}}</h2>
+      <b>On the board: </b><b ng-repeat="board in boards">{{board.title}}</b>
       <p>Pinned by: {{pin.name}}</p>
+      <!-- <a href="{{pin.url}}">See Page</a> -->
+
 
  	 	<md-card-actions layout="row" layout-align="start center">
 	      <md-card-icon-actions>
@@ -26,9 +29,9 @@
 	      		<md-icon class="material-icons">add</md-icon>
 	      	</md-button>
 	      	
-	      	<a ng-href="#!/pins/{{pin.id}}"><md-icon class="material-icons">zoom_in</md-icon></a>
+	      	<a ng-href="#!/pins/{{pin.id}}"><md-icon class="pin-btns material-icons">zoom_in</md-icon></a>
 	      	
-	      	<md-button ng-click="pinDelete(pin.id)" class="pin-btns md-icon-button" aria-label="icon">
+	      	<md-button ng-hide="" ng-click="pinDelete(pin.id)" class="pin-btns md-icon-button" aria-label="icon">
 	      		<md-icon class="material-icons">delete</md-icon>
 	      	</md-button>
       	</md-card-icon-actions>

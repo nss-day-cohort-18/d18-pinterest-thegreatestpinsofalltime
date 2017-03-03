@@ -1,30 +1,28 @@
 <!-- START SEARCH BAR -->
-<div class="row">
     <md-icon id="search-icon" class="material-icons">search</md-icon>
-    <md-input-container class="cols10">
-      <i class="material-icons">
-        <input type="text" class="fa fa-search form-control" placeholder="Search Boards..." ng-model="searchText.search">
+    <md-input-container>  
+        <i class="material-icons">
+        <input id="search-input" type="text" class="fa fa-search form-control" placeholder="Search Boards..." ng-model="searchText.search">
       </i>
     </md-input-container>
-</div>
-<!-- END SEARCH BAR -->
 
+<!-- END SEARCH BAR -->
 <h2>Your Boards</h2>
 
 <md-card class="board" ng-repeat="board in boards | filter:{boardId, title}">
-     <md-card-header>
+      <md-card-header>
         <md-card-avatar>
-           <img class="md-user-avatar" src="/img/board-test.png">
+            <img class="md-user-avatar" src="/img/board-test.png">
         </md-card-avatar>
         <md-card-header-text>
            <span class="md-title"></span>
 <!--            <span class="md-subhead"></span>
- -->        </md-card-header-text>
-     </md-card-header>
+-->     </md-card-header-text>
+      </md-card-header>
 
      <md-card-title>
         <md-card-title-text>
-           <span class="md-headline">{{board.title}}</span>
+           <span class="md-headline"><a ng-href="#!/boards/list/{{board.id}}">{{board.title}}</a></span>
         </md-card-title-text>
      </md-card-title>
 

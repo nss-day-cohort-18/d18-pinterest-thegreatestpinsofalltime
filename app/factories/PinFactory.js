@@ -26,7 +26,7 @@ console.log("hello from pinfactory");
 	let getPins = (user) => {
 		let userPins = [];
 		return $q((resolve, reject) => {
-			console.log("user at getPins", user);	
+			console.log("user at getPins", user);
 			$http.get(`${FBCreds.databaseURL}/pins.json?orderBy="uid"&equalTo="${user}"`)
 			.then((userPinObject) => {
 				let userPinList = userPinObject.data;
@@ -41,7 +41,7 @@ console.log("hello from pinfactory");
 			.catch((error) => {
 				reject(error);
 			});
-		}); 
+		});
 	};
 
 
@@ -78,7 +78,7 @@ console.log("hello from pinfactory");
 			.then(function(pinObject){
 				resolve(pinObject.data);
 			})
-			.catch(function(error){ 
+			.catch(function(error){
 				reject(error);
 			});
 		});
@@ -95,17 +95,39 @@ console.log("hello from pinfactory");
 			.then(function(ObjectFromFirebase) {
 				resolve(ObjectFromFirebase);
 			})
-			.catch(function(error) {
+			.catch((error) => {
 				reject(error);
 			});
 
 		});
 	};
 
+	let getBoardPins = (boardId) => {
+		let boardPins = [];
+		return $q((resolve, reject) => {
+			console.log("board at getPins", boardId);
+			$http.get(`${FBCreds.databaseURL}/pins.json?orderBy="boardId"&equalTo="${boardId}"`)
+			.then((boardPinObject) => {
+				let boardPinList = boardPinObject.data;
+				console.log('Board Pin List: ', boardPinList);
+				Object.keys(boardPinList).forEach((key) => {
+					boardPinList[key].id = key;
+					boardPins.push(boardPinList[key]);
+					console.log(boardPins);
+				});
+				resolve(boardPins);
+			})
+			//success and error are used in previous versions of angular. now then and catch
+			.catch((error) => {
+				reject(error);
+			});
+		});
+	};
+
 	//return so that they can become part of ItemStorage
 
-	return {getAllPins, getPins, postNewPin, deletePin};
+
+	return {getAllPins, getPins, postNewPin, deletePin, getSinglePin, updatePin, getBoardPins};
+
 
 	});
-
-

@@ -93,7 +93,7 @@ a:-webkit-any-link {
   margin-bottom: 10px; }
 
 .pin-btns {
-  margin-left: 75px !important; }
+  margin-left: 45px !important; }
 
 .md-card {
   max-width: 30%;
@@ -111,6 +111,10 @@ a:-webkit-any-link {
 .card-title {
   display: inline-block;
   max-width: 30%; }
+
+.pinDetailCard {
+  width: 100em;
+  height: 150%; }
 
 .pinItButton:not([disabled]) {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
