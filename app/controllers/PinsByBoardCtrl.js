@@ -1,13 +1,21 @@
 'use strict';
 
-app.controller("PinsByBoardCtrl", function ($scope, $routeParams, PinFactory, AuthFactory, $location) {
+app.controller("PinsByBoardCtrl", function ($scope, $routeParams, PinFactory, BoardFactory, AuthFactory, $location) {
 	$scope.pins = [];
 	console.log('RouteParams for board ID: ', $routeParams.boardId);
 
   let user = AuthFactory.getUser();
   let board = $routeParams.boardId;
   console.log('is this same as routeParams above?', board);
-  $scope.heading = "My Board";
+  
+
+  BoardFactory.getBoardList(user)
+   .then( function(boardList) {
+      $scope.boards = boardList;
+      console.log('boardList', boardList);
+   });
+
+   $scope.heading = "Your Board";
 
 
 	PinFactory.getBoardPins(board)
