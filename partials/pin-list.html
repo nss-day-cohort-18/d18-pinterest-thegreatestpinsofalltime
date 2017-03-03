@@ -1,4 +1,16 @@
-<h1>All Pins</h1>
+<!-- START SEARCH BAR -->
+	
+    	<md-icon id="search-icon" class="material-icons">search</md-icon>
+   	<md-input-container> 	
+      <i class="material-icons">
+        <input id="search-input" type="text" class="fa fa-search form-control" placeholder="Search Pins..." ng-model="searchText.search">
+      </i>
+    </md-input-container>
+
+<!-- END SEARCH BAR -->
+
+<!-- START NG-VIEW -->
+<h1>{{heading}}</h1>
 
 <div class="pin-card" ng-repeat="pin in pins | filter:{name, title:searchText.search}">
 		<img src="{{pin.img}}" class="pin-img"></img>
@@ -18,4 +30,6 @@
       	</md-card-icon-actions>
       </md-card-actions>
 </div> 
+<!-- END NG-VIEW -->
+
 

@@ -7,12 +7,11 @@ body { margin: 30px; }
 }
 
 .nav-links {
-
   margin-bottom: 2.4em;
 }
 
 .search input {
-  width: 250px;
+  width: 500px;
   height: 32px;
   background: #fcfcfc;
   border: 1px solid #aaa;
@@ -60,6 +59,11 @@ body { margin: 30px; }
 
 // Nav
 
+#search-input {
+  width: 40em;
+  max-width: 95% !important;
+}
+
 a:-webkit-any-link {
     color: -webkit-link;
     text-decoration: none !important;
@@ -74,27 +78,38 @@ a:-webkit-any-link {
 // NG-View
 
 .pin-img {
-  width: 300px;
-  height: 250px;
+  border-radius: 10px;
+  width: 305px;
+  height: 300px;
   text-align: center;
 }
 
 #ng-view {
-  margin-right: 2%;
+  margin-right: 1%;
   margin-left: 1%;
 }
 
 .pin-card {
   text-align: center;
   width: 20em;
-  height: 25em;
+  height: 30em;
   display: inline-block;
-  margin: 10px 10px 10px 10px;
-  padding: 40px;
-  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
   border-radius: 5px;
   background-color: #e0e0e0;
-  box-shadow: 2px 2px 2px;
+  box-shadow: 1px 1px 1px;
+}
+
+.pin-card:hover {
+  background-color: lightgrey;
+  box-shadow: 3px 3px 3px;
+
+}
+
+#search-icon {
+  margin-bottom: 10px;
 }
 
 .pin-btns {

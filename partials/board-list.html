@@ -1,3 +1,14 @@
+<!-- START SEARCH BAR -->
+<div class="row">
+    <md-icon id="search-icon" class="material-icons">search</md-icon>
+    <md-input-container class="cols10">
+      <i class="material-icons">
+        <input type="text" class="fa fa-search form-control" placeholder="Search Boards..." ng-model="searchText.search">
+      </i>
+    </md-input-container>
+</div>
+<!-- END SEARCH BAR -->
+
 <h2>All Your Boards</h2>
 
 <md-card class="board" ng-repeat="board in boards | filter:{boardId, title}">
