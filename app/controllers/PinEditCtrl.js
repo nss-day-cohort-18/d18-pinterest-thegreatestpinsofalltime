@@ -8,6 +8,7 @@ app.controller("PinEditCtrl", function($scope, $location, $routeParams, PinFacto
   $scope.btnText = "Update";
   $scope.newPin = {};
 
+  
   PinFactory.getSinglePin($routeParams.pinId)
   .then(function successCallback(response){
      console.log("getSinglePinresponse", response);

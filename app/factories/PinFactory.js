@@ -95,7 +95,7 @@ console.log("hello from pinfactory");
 			.then(function(ObjectFromFirebase) {
 				resolve(ObjectFromFirebase);
 			})
-			.catch(function(error) {
+			.catch((error) => {
 				reject(error);
 			});
 
@@ -104,7 +104,7 @@ console.log("hello from pinfactory");
 
 	//return so that they can become part of ItemStorage
 
-	return {getAllPins, getPins, postNewPin, deletePin};
+	return {getAllPins, getPins, postNewPin, deletePin, getSinglePin, updatePin};
 
 	});
 
